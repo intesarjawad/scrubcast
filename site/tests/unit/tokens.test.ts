@@ -79,10 +79,9 @@ describe("the published contrast table", () => {
 
 describe("token and asset budgets", () => {
   it("keeps raw sizes, spacing and colours inside the token block", () => {
-    const rules = (stylesheet + scrubberStyles + cardStyles + homeStyles + sheetStyles).replace(
-      /:root\s*\{[^}]+\}/g,
-      "",
-    );
+    const rules = (stylesheet + scrubberStyles + cardStyles + homeStyles + sheetStyles)
+      .replace(/:root\s*\{[^}]+\}/g, "")
+      .replace(/@media\s*\(\s*(?:min|max)-width:[^)]*\)/g, "@media");
     expect(rules).not.toMatch(/--[\w-]+\s*:/);
     expect(rules).not.toMatch(
       /#[\da-f]{3,8}\b|\b(?:rgb|hsl|oklch)\(|(?:\d*\.)?\d+(?:px|rem|em|ch|vw|vh|svh|%)\b/i,

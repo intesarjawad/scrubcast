@@ -30,6 +30,7 @@ import type { AuditFooter, Launch, LaunchAssessment, PastLaunch, RuleRisk } from
 import { isHindcast } from "./audit";
 
 const OUTCOME_ABSENT = "unknown";
+const REPOSITORY_URL = "https://github.com/intesarjawad/scrubcast";
 
 function outcomeText(footer: AuditFooter): string {
   const when =
@@ -412,6 +413,7 @@ export function renderLaunch(app: HTMLElement, assessment: LaunchAssessment): vo
       link("Data", "#provenance"),
       link("Audit", routeHref("audit/")),
       json,
+      link("GitHub", REPOSITORY_URL),
     );
     footer.replaceChildren(
       nav,

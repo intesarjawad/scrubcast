@@ -55,6 +55,7 @@
   --measure: 72ch;
   --board-width: 1100px;
   --control: 44px;
+  --target-min: 24px;
   --share-width: 1200px;
   --share-height: 630px;
   --hidden-offset: -10000px;
@@ -202,6 +203,20 @@ nav a {
   min-height: var(--control);
   color: var(--muted);
 }
+nav a.star-link {
+  gap: var(--s2);
+  min-width: var(--target-min);
+  justify-content: center;
+}
+@media (max-width: 40rem) {
+  .star-text {
+    display: none;
+  }
+  .site-header,
+  .site-header nav {
+    column-gap: var(--s3);
+  }
+}
 nav a[aria-current="page"] {
   color: var(--ink);
 }
@@ -213,11 +228,8 @@ nav a[aria-current="page"] {
   padding-block: var(--s7);
   border-top: var(--hair) solid var(--line);
 }
-.site-footer > a {
-  display: inline-flex;
-  align-items: center;
-  min-height: var(--control);
-  font-size: var(--text-base);
+.footer-links a {
+  color: var(--ink);
 }
 .site-footer a {
   flex-shrink: 0;
