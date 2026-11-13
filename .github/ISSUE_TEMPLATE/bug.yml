@@ -1,0 +1,18 @@
+name: Bug report
+description: Report reproducible incorrect behavior.
+title: "Bug: "
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the command, version, inputs and expected behavior. Remove secrets and personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include relevant error output and your operating system.
+    validations:
+      required: true

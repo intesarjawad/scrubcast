@@ -1,0 +1,372 @@
+{
+  "$defs": {
+    "Confidence": {
+      "description": "Evidence strength of a model-based rule assessment.",
+      "enum": [
+        "direct",
+        "medium",
+        "low"
+      ],
+      "title": "Confidence",
+      "type": "string"
+    },
+    "EnsembleModel": {
+      "enum": [
+        "ecmwf",
+        "gfs"
+      ],
+      "type": "string"
+    },
+    "LaunchStatus": {
+      "description": "Known LL2 status abbreviations, including completed launch outcomes.",
+      "enum": [
+        "Go",
+        "TBD",
+        "Success",
+        "Failure",
+        "Hold",
+        "In Flight",
+        "Partial Failure",
+        "TBC",
+        "Payload Deployed"
+      ],
+      "title": "LaunchStatus",
+      "type": "string"
+    },
+    "LaunchSummary": {
+      "description": "Schedule row with coverage and the available launch-page evidence.",
+      "properties": {
+        "assessment": {
+          "title": "Assessment",
+          "type": "boolean"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "last_updated": {
+          "format": "date-time",
+          "title": "Last Updated",
+          "type": "string"
+        },
+        "launch_service_provider_name": {
+          "title": "Launch Service Provider Name",
+          "type": "string"
+        },
+        "mission": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Mission"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "net": {
+          "format": "date-time",
+          "title": "Net",
+          "type": "string"
+        },
+        "net_precision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Net Precision"
+        },
+        "pad": {
+          "$ref": "#/$defs/Pad"
+        },
+        "page_url": {
+          "title": "Page Url",
+          "type": "string"
+        },
+        "probability": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Probability"
+        },
+        "rocket_name": {
+          "title": "Rocket Name",
+          "type": "string"
+        },
+        "slug": {
+          "title": "Slug",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/LaunchStatus"
+        },
+        "tier": {
+          "$ref": "#/$defs/Tier"
+        },
+        "weather_concerns": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weather Concerns"
+        },
+        "window_end": {
+          "format": "date-time",
+          "title": "Window End",
+          "type": "string"
+        },
+        "window_start": {
+          "format": "date-time",
+          "title": "Window Start",
+          "type": "string"
+        },
+        "worst_rule": {
+          "$ref": "#/$defs/WorstRule"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "slug",
+        "status",
+        "net",
+        "net_precision",
+        "window_start",
+        "window_end",
+        "probability",
+        "weather_concerns",
+        "launch_service_provider_name",
+        "rocket_name",
+        "pad",
+        "mission",
+        "last_updated",
+        "tier",
+        "assessment",
+        "worst_rule",
+        "page_url"
+      ],
+      "title": "LaunchSummary",
+      "type": "object"
+    },
+    "Location": {
+      "description": "Launch site identity and IANA time zone for local launch times.",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "integer"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "timezone_name": {
+          "title": "Timezone Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "timezone_name"
+      ],
+      "title": "Location",
+      "type": "object"
+    },
+    "Mission": {
+      "description": "Mission orbit, which LL2 may not yet identify.",
+      "properties": {
+        "orbit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Orbit"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "orbit"
+      ],
+      "title": "Mission",
+      "type": "object"
+    },
+    "Orbit": {
+      "description": "Orbit abbreviation retained for the schedule's suborbital filter.",
+      "properties": {
+        "abbrev": {
+          "title": "Abbrev",
+          "type": "string"
+        }
+      },
+      "required": [
+        "abbrev"
+      ],
+      "title": "Orbit",
+      "type": "object"
+    },
+    "Pad": {
+      "description": "Launch pad position in geographic degrees and its parent site.",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "integer"
+        },
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "location": {
+          "$ref": "#/$defs/Location"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "latitude",
+        "longitude",
+        "location"
+      ],
+      "title": "Pad",
+      "type": "object"
+    },
+    "Tier": {
+      "description": "Site coverage of published launch weather criteria.",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Tier",
+      "type": "string"
+    },
+    "WorstRule": {
+      "description": "Display label and its evidence, absent for unavailable or clear forecasts.",
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Confidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "model": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EnsembleModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "risk_fraction": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Risk Fraction"
+        },
+        "rule_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rule Id"
+        }
+      },
+      "required": [
+        "label"
+      ],
+      "title": "WorstRule",
+      "type": "object"
+    }
+  },
+  "description": "Upcoming launches in the ten-day forecast horizon.",
+  "properties": {
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "launches": {
+      "items": {
+        "$ref": "#/$defs/LaunchSummary"
+      },
+      "title": "Launches",
+      "type": "array"
+    },
+    "members_total": {
+      "title": "Members Total",
+      "type": "integer"
+    },
+    "schedule_stale": {
+      "title": "Schedule Stale",
+      "type": "boolean"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "generated_at",
+    "schedule_stale",
+    "members_total",
+    "launches"
+  ],
+  "title": "Latest",
+  "type": "object"
+}

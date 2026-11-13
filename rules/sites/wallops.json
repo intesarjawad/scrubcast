@@ -1,0 +1,19 @@
+{
+  "site_id": "wallops",
+  "location_ids": [
+    21
+  ],
+  "tier": "B",
+  "forecast_point": {
+    "point_id": "wallops",
+    "latitude": 37.833839,
+    "longitude": -75.488236
+  },
+  "metar_station": "KWAL",
+  "rule_sets": [
+    "llcc-nasa-std-4010a"
+  ],
+  "reference_only": true,
+  "confidence": null,
+  "coordinate_overrides": {}
+}

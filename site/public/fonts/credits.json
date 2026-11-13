@@ -1,0 +1,23 @@
+[
+  {
+    "family": "EB Garamond",
+    "file": "eb-garamond-latin.woff2",
+    "source_url": "https://fonts.gstatic.com/s/ebgaramond/v33/SlGUmQSNjdsmc35JDF1K5GR1SDk_YAPI.woff2",
+    "licence": "SIL Open Font License 1.1",
+    "licence_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/OFL.txt"
+  },
+  {
+    "family": "EB Garamond Italic",
+    "file": "eb-garamond-italic-latin.woff2",
+    "source_url": "https://fonts.gstatic.com/s/ebgaramond/v33/SlGFmQSNjdsmc35JDF1K5GRwUjcdlttVFm-rI7e8QL99U6i1hGFJRvw.woff2",
+    "licence": "SIL Open Font License 1.1",
+    "licence_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/OFL.txt"
+  },
+  {
+    "family": "Public Sans",
+    "file": "public-sans-latin.woff2",
+    "source_url": "https://fonts.gstatic.com/s/publicsans/v21/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2",
+    "licence": "SIL Open Font License 1.1",
+    "licence_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/publicsans/OFL.txt"
+  }
+]

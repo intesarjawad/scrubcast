@@ -1,0 +1,33 @@
+{
+  "name": "scrubcast-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "26.13.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest run tests/unit",
+    "check": "biome ci . && tsc --noEmit && npm test",
+    "build": "vite build && node scripts/stubs.ts",
+    "cards": "node scripts/cards.ts",
+    "cards:check": "node scripts/cards.ts --check",
+    "record-demo": "node scripts/record-demo.ts",
+    "fixtures": "cd .. && UV_CACHE_DIR=.cache/uv uv run --locked python site/scripts/fixtures.py",
+    "budget": "node scripts/budget.ts",
+    "cold-start": "node scripts/cold-start.ts",
+    "e2e": "playwright test",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@biomejs/biome": "2.6.6",
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.6",
+    "json-schema-to-typescript": "16.0.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.7",
+    "vitest": "5.1.0"
+  }
+}

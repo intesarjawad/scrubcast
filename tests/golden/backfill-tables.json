@@ -1,0 +1,2608 @@
+{
+  "end": "2025-10-31",
+  "forecast_check": {
+    "label": "Deterministic surface forecasts from Open-Meteo's Previous Runs archive. Scrubcast's live board uses the ensembles; this checks the same models' surface forecasts at the site, not the ensemble spread, and covers only the wind and precipitation rules.",
+    "tables": [
+      {
+        "lead_hours": 24,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": [
+              1.0,
+              1.0
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.0
+          },
+          "n": 7,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "ecmwf",
+        "n": 7,
+        "period": "held_out",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": [
+                1.0,
+                1.0
+              ],
+              "n": 7,
+              "valid_resamples": 1320,
+              "value": 1.0
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": [
+              -1.9312651156093052,
+              0.42319183374140595
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": -0.7582508775787353
+          },
+          "mae": {
+            "interval": [
+              0.9684978577947344,
+              2.2539946007251737
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.569679424484253
+          },
+          "mae_skill": {
+            "interval": [
+              -0.8005732630115534,
+              0.6122391765543382
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 0.26349974546408383
+          }
+        }
+      },
+      {
+        "lead_hours": 24,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "n": 0,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "ecmwf",
+        "n": 0,
+        "period": "development",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae_skill": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          }
+        }
+      },
+      {
+        "lead_hours": 48,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": [
+              1.0,
+              1.0
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.0
+          },
+          "n": 7,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "ecmwf",
+        "n": 7,
+        "period": "held_out",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": [
+              -1.993669360181727,
+              0.7633466564129411
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": -0.6568222496109009
+          },
+          "mae": {
+            "interval": [
+              1.2215851346827915,
+              2.473011958447048
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.8825365584858484
+          },
+          "mae_skill": {
+            "interval": [
+              -0.8847959449969808,
+              0.42466992671474657
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 0.11670584905987957
+          }
+        }
+      },
+      {
+        "lead_hours": 48,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "n": 0,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "ecmwf",
+        "n": 0,
+        "period": "development",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae_skill": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          }
+        }
+      },
+      {
+        "lead_hours": 72,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": [
+              1.0,
+              1.0
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.0
+          },
+          "n": 7,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "ecmwf",
+        "n": 7,
+        "period": "held_out",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": [
+              -1.908642069849968,
+              0.5588908080967494
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": -0.7439651258272443
+          },
+          "mae": {
+            "interval": [
+              1.1353421469637188,
+              2.238726212145124
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.6953936754575456
+          },
+          "mae_skill": {
+            "interval": [
+              -0.8235561608719606,
+              0.5329911993854726
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 0.2045140848276492
+          }
+        }
+      },
+      {
+        "lead_hours": 72,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "n": 0,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "ecmwf",
+        "n": 0,
+        "period": "development",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae_skill": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          }
+        }
+      },
+      {
+        "lead_hours": 24,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": [
+              1.0,
+              1.0
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.0
+          },
+          "n": 7,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "gfs",
+        "n": 7,
+        "period": "held_out",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": [
+              0.7674215573079789,
+              3.18438205803833
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.987463378162929
+          },
+          "mae": {
+            "interval": [
+              0.9204533789419994,
+              3.1848582002142742
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 2.044920428377424
+          },
+          "mae_skill": {
+            "interval": [
+              -0.7704453144951742,
+              0.4349706823817296
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 0.04051464744113642
+          }
+        }
+      },
+      {
+        "lead_hours": 24,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "n": 0,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "gfs",
+        "n": 0,
+        "period": "development",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae_skill": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          }
+        }
+      },
+      {
+        "lead_hours": 48,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": [
+              1.0,
+              1.0
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.0
+          },
+          "n": 7,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "gfs",
+        "n": 7,
+        "period": "held_out",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": [
+                1.0,
+                1.0
+              ],
+              "n": 7,
+              "valid_resamples": 1320,
+              "value": 1.0
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": [
+                1.0,
+                1.0
+              ],
+              "n": 7,
+              "valid_resamples": 1320,
+              "value": 1.0
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": [
+              -1.6721419881864277,
+              0.8761920367845809
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": -0.4496793856560843
+          },
+          "mae": {
+            "interval": [
+              1.1693186513867515,
+              2.183356917825563
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.6811079747957502
+          },
+          "mae_skill": {
+            "interval": [
+              -0.6666633728539919,
+              0.4843572303773576
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 0.21121699626900503
+          }
+        }
+      },
+      {
+        "lead_hours": 48,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "n": 0,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "gfs",
+        "n": 0,
+        "period": "development",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae_skill": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          }
+        }
+      },
+      {
+        "lead_hours": 72,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": [
+              1.0,
+              1.0
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.0
+          },
+          "n": 7,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "gfs",
+        "n": 7,
+        "period": "held_out",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": [
+              -1.8346862010700773,
+              1.1257154776175364
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": -0.4139651510314941
+          },
+          "mae": {
+            "interval": [
+              1.3427953312815526,
+              2.506186929349627
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.9453937606070382
+          },
+          "mae_skill": {
+            "interval": [
+              -0.9741138334470567,
+              0.36259924187710324
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 0.08721298278440903
+          }
+        }
+      },
+      {
+        "lead_hours": 72,
+        "liftoff_wind": {
+          "agreement": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "n": 0,
+          "positives": 0
+        },
+        "missing_metar": 0,
+        "model": "gfs",
+        "n": 0,
+        "period": "development",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae_skill": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          }
+        }
+      }
+    ]
+  },
+  "n": 7,
+  "proxy_check": {
+    "concern_coverage": {
+      "cumulus": 6,
+      "liftoff_wind": 1
+    },
+    "concern_lists": 6,
+    "label": "Proxy check on near-analysis data. This tests Scrubcast's rule proxies, not its forecasts. Official concerns are the forecaster's final list, not an observation that a rule was violated.",
+    "observations": [
+      {
+        "missing_metar": 0,
+        "model": "ecmwf",
+        "n": 7,
+        "period": "held_out",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": [
+              -1.5823765605294362,
+              0.6457153989394052
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": -0.48967944117355344
+          },
+          "mae": {
+            "interval": [
+              0.8195211336609977,
+              1.998727446282523
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.4096794323180062
+          }
+        }
+      },
+      {
+        "missing_metar": 0,
+        "model": "ecmwf",
+        "n": 0,
+        "period": "development",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          }
+        }
+      },
+      {
+        "missing_metar": 0,
+        "model": "gfs",
+        "n": 7,
+        "period": "held_out",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 7,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": [
+              0.8600245508465358,
+              2.3842959498053413
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.6231777388087683
+          },
+          "mae": {
+            "interval": [
+              0.8600245508465358,
+              2.3842959498053413
+            ],
+            "n": 7,
+            "valid_resamples": 2000,
+            "value": 1.6231777388087683
+          }
+        }
+      },
+      {
+        "missing_metar": 0,
+        "model": "gfs",
+        "n": 0,
+        "period": "development",
+        "precipitation": {
+          "0.5_mm": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "measurable": {
+            "false_alarm_ratio": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "peirce": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "wind": {
+          "bias": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          },
+          "mae": {
+            "interval": null,
+            "n": 0,
+            "valid_resamples": 0,
+            "value": null
+          }
+        }
+      }
+    ],
+    "tables": [
+      {
+        "model": "ecmwf",
+        "period": "held_out",
+        "rules": {
+          "anvil": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "cumulus": {
+            "always_flag_precision": 1.0,
+            "always_flag_recall": 1.0,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 6,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": [
+                0.0,
+                0.0
+              ],
+              "n": 6,
+              "valid_resamples": 2000,
+              "value": 0.0
+            }
+          },
+          "disturbed_weather": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "flight_through_precip": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "liftoff_wind": {
+            "always_flag_precision": 0.16666666666666666,
+            "always_flag_recall": 1.0,
+            "balanced_accuracy": {
+              "interval": [
+                0.5,
+                0.5
+              ],
+              "n": 6,
+              "valid_resamples": 1321,
+              "value": 0.5
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 1,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": [
+                0.0,
+                0.0
+              ],
+              "n": 6,
+              "valid_resamples": 1321,
+              "value": 0.0
+            }
+          },
+          "thick_cloud": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "scope": "nearest_net"
+      },
+      {
+        "model": "ecmwf",
+        "period": "held_out",
+        "rules": {
+          "anvil": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "cumulus": {
+            "always_flag_precision": 1.0,
+            "always_flag_recall": 1.0,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 6,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": [
+                0.0,
+                0.0
+              ],
+              "n": 6,
+              "valid_resamples": 2000,
+              "value": 0.0
+            }
+          },
+          "disturbed_weather": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "flight_through_precip": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": [
+                0.0,
+                0.0
+              ],
+              "n": 6,
+              "valid_resamples": 1350,
+              "value": 0.0
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "liftoff_wind": {
+            "always_flag_precision": 0.16666666666666666,
+            "always_flag_recall": 1.0,
+            "balanced_accuracy": {
+              "interval": [
+                0.5,
+                0.5
+              ],
+              "n": 6,
+              "valid_resamples": 1321,
+              "value": 0.5
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 1,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": [
+                0.0,
+                0.0
+              ],
+              "n": 6,
+              "valid_resamples": 1321,
+              "value": 0.0
+            }
+          },
+          "thick_cloud": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "scope": "any_window_hour"
+      },
+      {
+        "model": "ecmwf",
+        "period": "development",
+        "rules": {
+          "anvil": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "cumulus": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "disturbed_weather": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "flight_through_precip": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "liftoff_wind": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "thick_cloud": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "scope": "nearest_net"
+      },
+      {
+        "model": "ecmwf",
+        "period": "development",
+        "rules": {
+          "anvil": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "cumulus": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "disturbed_weather": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "flight_through_precip": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "liftoff_wind": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "thick_cloud": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "scope": "any_window_hour"
+      },
+      {
+        "model": "gfs",
+        "period": "held_out",
+        "rules": {
+          "anvil": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "cumulus": {
+            "always_flag_precision": 1.0,
+            "always_flag_recall": 1.0,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 6,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": [
+                0.0,
+                0.0
+              ],
+              "n": 6,
+              "valid_resamples": 2000,
+              "value": 0.0
+            }
+          },
+          "disturbed_weather": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "flight_through_precip": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "liftoff_wind": {
+            "always_flag_precision": 0.16666666666666666,
+            "always_flag_recall": 1.0,
+            "balanced_accuracy": {
+              "interval": [
+                0.5,
+                0.5
+              ],
+              "n": 6,
+              "valid_resamples": 1321,
+              "value": 0.5
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 1,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": [
+                0.0,
+                0.0
+              ],
+              "n": 6,
+              "valid_resamples": 1321,
+              "value": 0.0
+            }
+          },
+          "thick_cloud": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "scope": "nearest_net"
+      },
+      {
+        "model": "gfs",
+        "period": "held_out",
+        "rules": {
+          "anvil": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "cumulus": {
+            "always_flag_precision": 1.0,
+            "always_flag_recall": 1.0,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 6,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": [
+                0.0,
+                0.0
+              ],
+              "n": 6,
+              "valid_resamples": 2000,
+              "value": 0.0
+            }
+          },
+          "disturbed_weather": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "flight_through_precip": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "liftoff_wind": {
+            "always_flag_precision": 0.16666666666666666,
+            "always_flag_recall": 1.0,
+            "balanced_accuracy": {
+              "interval": [
+                0.5,
+                0.5
+              ],
+              "n": 6,
+              "valid_resamples": 1321,
+              "value": 0.5
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 1,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": [
+                0.0,
+                0.0
+              ],
+              "n": 6,
+              "valid_resamples": 1321,
+              "value": 0.0
+            }
+          },
+          "thick_cloud": {
+            "always_flag_precision": 0.0,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 6,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 6,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "scope": "any_window_hour"
+      },
+      {
+        "model": "gfs",
+        "period": "development",
+        "rules": {
+          "anvil": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "cumulus": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "disturbed_weather": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "flight_through_precip": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "liftoff_wind": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "thick_cloud": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "scope": "nearest_net"
+      },
+      {
+        "model": "gfs",
+        "period": "development",
+        "rules": {
+          "anvil": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "cumulus": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "disturbed_weather": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "flight_through_precip": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "liftoff_wind": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          },
+          "thick_cloud": {
+            "always_flag_precision": null,
+            "always_flag_recall": null,
+            "balanced_accuracy": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "balanced_accuracy_chance": 0.5,
+            "n": 0,
+            "positives": 0,
+            "precision": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            },
+            "recall": {
+              "interval": null,
+              "n": 0,
+              "valid_resamples": 0,
+              "value": null
+            }
+          }
+        },
+        "scope": "any_window_hour"
+      }
+    ],
+    "unevaluable_concern_launches": 0,
+    "unevaluable_concern_share": 0
+  },
+  "start": "2025-10-01"
+}

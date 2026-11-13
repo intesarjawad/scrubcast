@@ -1,0 +1,4 @@
+{"sent_at":"2026-11-01T01:00:00Z","point_id":"cape","status":"fetched","cost_units":344.4,"remaining_units":255.6}
+{"sent_at":"2026-11-01T01:01:00Z","point_id":"vandenberg","status":"deferred_upstream_429"}
+{"sent_at":"2026-11-02T01:00:00Z","point_id":"cape","status":"fetched","cost_units":7600,"remaining_units":0,"cost_mismatch":true}
+{"sent_at":"2026-11-02T01:01:00Z","point_id":"vandenberg","status":"deferred_budget"}

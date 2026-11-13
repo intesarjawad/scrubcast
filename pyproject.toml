@@ -1,0 +1,83 @@
+[build-system]
+requires = ["hatchling==1.33.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scrubcast"
+version = "0.1.0"
+description = "Follow the weather that could hold up the next rocket launch."
+readme = "README.md"
+requires-python = ">=3.14"
+license = "MIT"
+dependencies = ["httpx==0.28.1", "numpy==2.5.4", "pydantic==2.14.3"]
+
+[project.scripts]
+scrubcast = "scrubcast.cli:main"
+
+[dependency-groups]
+dev = [
+  "ruff==0.17.4",
+  "pyright==1.1.414",
+  "pytest==9.2.0",
+  "hypothesis==6.170.15",
+  "mutmut==3.8.1",
+  "pre-commit==4.7.0",
+]
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/rules", "/tests/fixtures"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scrubcast"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"rules" = "scrubcast/resources/rules"
+"tests/fixtures/RECORDED_AT" = "scrubcast/resources/fixtures/RECORDED_AT"
+"tests/fixtures/ll2_upcoming.json" = "scrubcast/resources/fixtures/ll2_upcoming.json"
+"tests/fixtures/open_meteo_cape.json" = "scrubcast/resources/fixtures/open_meteo_cape.json"
+"tests/fixtures/open_meteo_vandenberg.json" = "scrubcast/resources/fixtures/open_meteo_vandenberg.json"
+"tests/fixtures/open_meteo_tierc_ecmwf_only.json" = "scrubcast/resources/fixtures/open_meteo_tierc_ecmwf_only.json"
+"tests/fixtures/headers" = "scrubcast/resources/fixtures/headers"
+"tests/fixtures/past" = "scrubcast/resources/fixtures/past"
+"tests/fixtures/demo/latest.json" = "scrubcast/resources/fixtures/demo/latest.json"
+"tests/fixtures/ll2_previous_florida.json" = "scrubcast/resources/fixtures/ll2_previous_florida.json"
+"tests/fixtures/historical_cape_2025-10.json" = "scrubcast/resources/fixtures/historical_cape_2025-10.json"
+"tests/fixtures/previous_runs_cape_2025-10.json" = "scrubcast/resources/fixtures/previous_runs_cape_2025-10.json"
+"tests/fixtures/iem_xmr_2025-10.csv" = "scrubcast/resources/fixtures/iem_xmr_2025-10.csv"
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "D100", "D104", "D105", "D107", "D203", "D213", "COM812", "ISC001", "PLR2004", "CPY001",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "D", "PLR0913", "INP001"]
+"docs/design/**" = ["INP001"]
+# A command run by name, never imported.
+"scripts/budget-report.py" = ["N999"]
+"scripts/check-deploy.py" = ["N999"]
+"scripts/cold-start-cli.py" = ["N999"]
+"scripts/gen-docs.py" = ["N999"]
+"scripts/ll2-version-watch.py" = ["N999"]
+"scripts/restore-archives.py" = ["N999"]
+"scripts/mutation-score.py" = ["N999"]
+
+[tool.pytest.ini_options]
+addopts = "-q --strict-markers"
+testpaths = ["tests"]
+
+[tool.mutmut]
+source_paths = ["src/"]
+also_copy = ["rules", "data", "schemas", "scripts", "docs"]
+only_mutate = [
+  "src/scrubcast/rules/*",
+  "src/scrubcast/audit/scores.py",
+  "src/scrubcast/budget/*",
+  "src/scrubcast/assess/best_time.py",
+]
+pytest_add_cli_args_test_selection = ["tests/unit/"]

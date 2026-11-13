@@ -1,0 +1,1 @@
+"""Validated source data contracts."""

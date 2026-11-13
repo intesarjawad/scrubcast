@@ -1,0 +1,927 @@
+{
+  "$defs": {
+    "AuditFooter": {
+      "description": "Outcome of one audited launch attempt.",
+      "properties": {
+        "attempt_id": {
+          "title": "Attempt Id",
+          "type": "string"
+        },
+        "attempt_net": {
+          "format": "date-time",
+          "title": "Attempt Net",
+          "type": "string"
+        },
+        "net_now": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Net Now"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AuditNote"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "official_concerns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Official Concerns",
+          "type": "array"
+        },
+        "outcome": {
+          "enum": [
+            "launched",
+            "launched_later",
+            "new_t0_pending",
+            "hold",
+            "unknown"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "scrubcast_24h": {
+          "items": {
+            "$ref": "#/$defs/AuditRule"
+          },
+          "title": "Scrubcast 24H",
+          "type": "array"
+        }
+      },
+      "required": [
+        "attempt_id",
+        "attempt_net",
+        "official_concerns",
+        "scrubcast_24h",
+        "outcome",
+        "net_now",
+        "note"
+      ],
+      "title": "AuditFooter",
+      "type": "object"
+    },
+    "AuditNote": {
+      "description": "Dated launch outcome evidence.",
+      "properties": {
+        "created_on": {
+          "format": "date-time",
+          "title": "Created On",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "created_on",
+        "text"
+      ],
+      "title": "AuditNote",
+      "type": "object"
+    },
+    "AuditRule": {
+      "description": "Rule evidence from an attempt's 24-hour ledger row.",
+      "properties": {
+        "risk_fraction": {
+          "title": "Risk Fraction",
+          "type": "number"
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "rule_id",
+        "title",
+        "risk_fraction"
+      ],
+      "title": "AuditRule",
+      "type": "object"
+    },
+    "Comparator": {
+      "enum": [
+        ">",
+        ">=",
+        "<="
+      ],
+      "type": "string"
+    },
+    "Confidence": {
+      "description": "Evidence strength of a model-based rule assessment.",
+      "enum": [
+        "direct",
+        "medium",
+        "low"
+      ],
+      "title": "Confidence",
+      "type": "string"
+    },
+    "Context": {
+      "description": "Context values remain absent when weather or historical evidence is missing.",
+      "properties": {
+        "convective_fraction_t0": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Convective Fraction T0"
+        },
+        "shear_percentile_t0": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Shear Percentile T0"
+        },
+        "upper_wind_percentile_t0": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Upper Wind Percentile T0"
+        }
+      },
+      "required": [
+        "convective_fraction_t0",
+        "upper_wind_percentile_t0",
+        "shear_percentile_t0"
+      ],
+      "title": "Context",
+      "type": "object"
+    },
+    "EnsembleModel": {
+      "enum": [
+        "ecmwf",
+        "gfs"
+      ],
+      "type": "string"
+    },
+    "GridPoint": {
+      "description": "Returned forecast cell in display units.",
+      "properties": {
+        "elevation_m": {
+          "title": "Elevation M",
+          "type": "number"
+        },
+        "lat": {
+          "title": "Lat",
+          "type": "number"
+        },
+        "lon": {
+          "title": "Lon",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lat",
+        "lon",
+        "elevation_m"
+      ],
+      "title": "GridPoint",
+      "type": "object"
+    },
+    "Launch": {
+      "description": "Consumed LL2 normal fields; probability is the official integer percent of GO.",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "last_updated": {
+          "format": "date-time",
+          "title": "Last Updated",
+          "type": "string"
+        },
+        "launch_service_provider_name": {
+          "title": "Launch Service Provider Name",
+          "type": "string"
+        },
+        "mission": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Mission"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "net": {
+          "format": "date-time",
+          "title": "Net",
+          "type": "string"
+        },
+        "net_precision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Net Precision"
+        },
+        "pad": {
+          "$ref": "#/$defs/Pad"
+        },
+        "probability": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Probability"
+        },
+        "rocket_name": {
+          "title": "Rocket Name",
+          "type": "string"
+        },
+        "slug": {
+          "title": "Slug",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/LaunchStatus"
+        },
+        "weather_concerns": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weather Concerns"
+        },
+        "window_end": {
+          "format": "date-time",
+          "title": "Window End",
+          "type": "string"
+        },
+        "window_start": {
+          "format": "date-time",
+          "title": "Window Start",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "slug",
+        "status",
+        "net",
+        "net_precision",
+        "window_start",
+        "window_end",
+        "probability",
+        "weather_concerns",
+        "launch_service_provider_name",
+        "rocket_name",
+        "pad",
+        "mission",
+        "last_updated"
+      ],
+      "title": "Launch",
+      "type": "object"
+    },
+    "LaunchStatus": {
+      "description": "Known LL2 status abbreviations, including completed launch outcomes.",
+      "enum": [
+        "Go",
+        "TBD",
+        "Success",
+        "Failure",
+        "Hold",
+        "In Flight",
+        "Partial Failure",
+        "TBC",
+        "Payload Deployed"
+      ],
+      "title": "LaunchStatus",
+      "type": "string"
+    },
+    "Location": {
+      "description": "Launch site identity and IANA time zone for local launch times.",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "integer"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "timezone_name": {
+          "title": "Timezone Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "timezone_name"
+      ],
+      "title": "Location",
+      "type": "object"
+    },
+    "LowestHour": {
+      "description": "Material ECMWF improvement within the launch window.",
+      "properties": {
+        "hour": {
+          "format": "date-time",
+          "title": "Hour",
+          "type": "string"
+        },
+        "members_below_t0": {
+          "title": "Members Below T0",
+          "type": "integer"
+        },
+        "union_risk": {
+          "title": "Union Risk",
+          "type": "number"
+        }
+      },
+      "required": [
+        "hour",
+        "union_risk",
+        "members_below_t0"
+      ],
+      "title": "LowestHour",
+      "type": "object"
+    },
+    "Mission": {
+      "description": "Mission orbit, which LL2 may not yet identify.",
+      "properties": {
+        "orbit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Orbit"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "orbit"
+      ],
+      "title": "Mission",
+      "type": "object"
+    },
+    "ModelRisk": {
+      "description": "T-0 rule risk with its evaluable and supplied member counts.",
+      "properties": {
+        "evaluable_members": {
+          "title": "Evaluable Members",
+          "type": "integer"
+        },
+        "members": {
+          "title": "Members",
+          "type": "integer"
+        },
+        "risk_fraction": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Risk Fraction"
+        }
+      },
+      "required": [
+        "risk_fraction",
+        "evaluable_members",
+        "members"
+      ],
+      "title": "ModelRisk",
+      "type": "object"
+    },
+    "Official": {
+      "description": "Official forecast kept separate from modelled member fractions.",
+      "properties": {
+        "concerns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Concerns",
+          "type": "array"
+        },
+        "probability_go_pct": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Probability Go Pct"
+        },
+        "source": {
+          "const": "Launch Library 2",
+          "default": "Launch Library 2",
+          "title": "Source",
+          "type": "string"
+        },
+        "unmapped_concerns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unmapped Concerns",
+          "type": "array"
+        }
+      },
+      "required": [
+        "probability_go_pct",
+        "concerns",
+        "unmapped_concerns"
+      ],
+      "title": "Official",
+      "type": "object"
+    },
+    "OmittedRule": {
+      "description": "Unavailable criterion and the reason it cannot be evaluated.",
+      "properties": {
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "rule_id",
+        "title",
+        "reason"
+      ],
+      "title": "OmittedRule",
+      "type": "object"
+    },
+    "Orbit": {
+      "description": "Orbit abbreviation retained for the schedule's suborbital filter.",
+      "properties": {
+        "abbrev": {
+          "title": "Abbrev",
+          "type": "string"
+        }
+      },
+      "required": [
+        "abbrev"
+      ],
+      "title": "Orbit",
+      "type": "object"
+    },
+    "Pad": {
+      "description": "Launch pad position in geographic degrees and its parent site.",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "integer"
+        },
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "location": {
+          "$ref": "#/$defs/Location"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "latitude",
+        "longitude",
+        "location"
+      ],
+      "title": "Pad",
+      "type": "object"
+    },
+    "ResolvedPlot": {
+      "description": "Display-ready plot metadata without unresolved parameter names.",
+      "properties": {
+        "origin": {
+          "enum": [
+            "source",
+            "scrub"
+          ],
+          "title": "Origin",
+          "type": "string"
+        },
+        "readout_phrase": {
+          "title": "Readout Phrase",
+          "type": "string"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        },
+        "variable": {
+          "title": "Variable",
+          "type": "string"
+        }
+      },
+      "required": [
+        "variable",
+        "unit",
+        "readout_phrase",
+        "origin"
+      ],
+      "title": "ResolvedPlot",
+      "type": "object"
+    },
+    "RuleRisk": {
+      "description": "Resolved criterion with hourly evidence and a separate T-0 summary.",
+      "properties": {
+        "approximation_note": {
+          "title": "Approximation Note",
+          "type": "string"
+        },
+        "by_model": {
+          "additionalProperties": {
+            "$ref": "#/$defs/ModelRisk"
+          },
+          "propertyNames": {
+            "$ref": "#/$defs/EnsembleModel"
+          },
+          "title": "By Model",
+          "type": "object"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        },
+        "hours": {
+          "items": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "title": "Hours",
+          "type": "array"
+        },
+        "llccr": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Llccr",
+          "type": "array"
+        },
+        "member_values_by_hour": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "items": {
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "type": "array"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "propertyNames": {
+            "$ref": "#/$defs/EnsembleModel"
+          },
+          "title": "Member Values By Hour",
+          "type": "object"
+        },
+        "member_violated_by_hour": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "items": {
+                  "items": {
+                    "anyOf": [
+                      {
+                        "enum": [
+                          0,
+                          1
+                        ],
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "type": "array"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "propertyNames": {
+            "$ref": "#/$defs/EnsembleModel"
+          },
+          "title": "Member Violated By Hour",
+          "type": "object"
+        },
+        "plot": {
+          "$ref": "#/$defs/ResolvedPlot"
+        },
+        "reference_only": {
+          "title": "Reference Only",
+          "type": "boolean"
+        },
+        "risk_by_hour": {
+          "additionalProperties": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "propertyNames": {
+            "$ref": "#/$defs/EnsembleModel"
+          },
+          "title": "Risk By Hour",
+          "type": "object"
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "rule_set_version": {
+          "title": "Rule Set Version",
+          "type": "string"
+        },
+        "source_url": {
+          "title": "Source Url",
+          "type": "string"
+        },
+        "threshold": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Threshold"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "rule_id",
+        "title",
+        "confidence",
+        "reference_only",
+        "approximation_note",
+        "llccr",
+        "source_url",
+        "rule_set_version",
+        "by_model",
+        "hours",
+        "risk_by_hour",
+        "member_values_by_hour",
+        "member_violated_by_hour",
+        "threshold",
+        "plot"
+      ],
+      "title": "RuleRisk",
+      "type": "object"
+    },
+    "Threshold": {
+      "description": "Resolved comparison in the plotted variable's units.",
+      "properties": {
+        "comparator": {
+          "$ref": "#/$defs/Comparator"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "comparator"
+      ],
+      "title": "Threshold",
+      "type": "object"
+    },
+    "Tier": {
+      "description": "Site coverage of published launch weather criteria.",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Tier",
+      "type": "string"
+    }
+  },
+  "description": "Versioned launch-page assessment contract.",
+  "properties": {
+    "audit": {
+      "items": {
+        "$ref": "#/$defs/AuditFooter"
+      },
+      "title": "Audit",
+      "type": "array"
+    },
+    "context": {
+      "$ref": "#/$defs/Context"
+    },
+    "evaluated_at": {
+      "format": "date-time",
+      "title": "Evaluated At",
+      "type": "string"
+    },
+    "fetched_at": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "format": "date-time",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "propertyNames": {
+        "$ref": "#/$defs/EnsembleModel"
+      },
+      "title": "Fetched At",
+      "type": "object"
+    },
+    "grid_point": {
+      "$ref": "#/$defs/GridPoint"
+    },
+    "launch": {
+      "$ref": "#/$defs/Launch"
+    },
+    "lowest_hour_verified": {
+      "default": false,
+      "title": "Lowest Hour Verified",
+      "type": "boolean"
+    },
+    "lowest_union_hour": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/LowestHour"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "not_evaluable": {
+      "items": {
+        "$ref": "#/$defs/OmittedRule"
+      },
+      "title": "Not Evaluable",
+      "type": "array"
+    },
+    "official": {
+      "$ref": "#/$defs/Official"
+    },
+    "refresh_deferred": {
+      "title": "Refresh Deferred",
+      "type": "boolean"
+    },
+    "rules": {
+      "items": {
+        "$ref": "#/$defs/RuleRisk"
+      },
+      "title": "Rules",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "t0_index": {
+      "title": "T0 Index",
+      "type": "integer"
+    },
+    "tier": {
+      "$ref": "#/$defs/Tier"
+    },
+    "union_risk_t0": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "propertyNames": {
+        "$ref": "#/$defs/EnsembleModel"
+      },
+      "title": "Union Risk T0",
+      "type": "object"
+    }
+  },
+  "required": [
+    "launch",
+    "tier",
+    "evaluated_at",
+    "fetched_at",
+    "refresh_deferred",
+    "grid_point",
+    "t0_index",
+    "rules",
+    "union_risk_t0",
+    "lowest_union_hour",
+    "not_evaluable",
+    "context",
+    "official"
+  ],
+  "title": "LaunchAssessment",
+  "type": "object"
+}

@@ -1,0 +1,100 @@
+name: audit
+
+on:
+  schedule:
+    - cron: "40 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      actions: write
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ledger
+          path: ledger
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          enable-cache: true
+      - run: uv sync --locked --no-dev
+      - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        with:
+          path: data/backfill
+          key: scrub-backfill-${{ github.run_id }}
+          restore-keys: scrub-backfill-
+      - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        with:
+          path: data/iem
+          key: scrub-iem-${{ github.run_id }}
+          restore-keys: scrub-iem-
+      - name: Backfill on the first of the month or when no snapshots are cached
+        run: |
+          if [ "$(date -u +%d)" != "01" ] && [ -d data/backfill/snapshots ]; then
+            exit 0
+          fi
+          for _ in $(seq 1 40); do
+            uv run --locked scrubcast backfill --request-limit 200 | tee backfill.log
+            grep -q "Repeat the same command" backfill.log || exit 0
+          done
+          echo "::error::Backfill did not finish in 40 passes; the next run continues from the cached snapshots"
+          exit 1
+      - name: Restore the collector wind archives
+        if: vars.ARCHIVE_REPO != ''
+        env:
+          GH_TOKEN: ${{ secrets.ARCHIVE_TOKEN || github.token }}
+          ARCHIVE_REPO: ${{ vars.ARCHIVE_REPO }}
+        run: uv run --locked python scripts/restore-archives.py
+      - name: Note missing archive configuration
+        if: vars.ARCHIVE_REPO == ''
+        run: echo "Wind audit unavailable until ARCHIVE_REPO is configured (docs/operations.md)" >> "$GITHUB_STEP_SUMMARY"
+      - name: Record attempt outcomes
+        run: uv run --locked scrubcast audit
+      - uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        if: always()
+        with:
+          path: data/backfill
+          key: scrub-backfill-${{ github.run_id }}
+      - uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        if: always()
+        with:
+          path: data/iem
+          key: scrub-iem-${{ github.run_id }}
+      - name: Audit the forecast ledger
+        run: uv run --locked scrubcast hindcast
+      - name: Check the Launch Library version on Mondays
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "$(date -u +%u)" = "1" ]; then
+            uv run --locked python scripts/ll2-version-watch.py
+          fi
+      - name: Commit the ledger
+        working-directory: ledger
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "ledger: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for attempt in 1 2 3; do
+            git pull --rebase --quiet origin ledger && git push --quiet origin HEAD:ledger && exit 0
+            sleep $((attempt * 10))
+          done
+          exit 1
+      - name: Re-enable scheduled workflows
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for workflow in collect.yml refresh.yml audit.yml; do
+            gh api -X PUT "repos/$GITHUB_REPOSITORY/actions/workflows/$workflow/enable" --silent
+          done

@@ -1,0 +1,20 @@
+{
+  "site_id": "cape",
+  "location_ids": [
+    12,
+    27
+  ],
+  "tier": "A",
+  "forecast_point": {
+    "point_id": "cape",
+    "latitude": 28.5,
+    "longitude": -80.75
+  },
+  "metar_station": "KXMR",
+  "rule_sets": [
+    "llcc-nasa-std-4010a"
+  ],
+  "reference_only": false,
+  "confidence": null,
+  "coordinate_overrides": {}
+}

@@ -1,0 +1,6 @@
+Budget 2026-11 (units; daily budget 7,500)
+2026-11-01: 344.40 / 7,500
+2026-11-02: 7,600.00 / 7,500 OVER BUDGET
+Deferred by budget: 1
+Deferred upstream 429: 1
+Actions minutes (elapsed): 5.50

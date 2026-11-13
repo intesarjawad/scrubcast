@@ -1,0 +1,1 @@
+"""Local publication entry points."""

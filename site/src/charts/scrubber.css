@@ -1,0 +1,101 @@
+@media (forced-colors: active) {
+  .member.exceed {
+    stroke-dasharray: 2 1;
+  }
+  .pane-gfs .member.exceed {
+    stroke-dasharray: 5 2 1 2;
+  }
+  .cursor {
+    stroke-dasharray: 1 2;
+  }
+}
+.plot-wrap {
+  position: relative;
+  touch-action: pan-y;
+}
+.plot {
+  height: var(--plot-height);
+  forced-color-adjust: none;
+  fill: var(--muted);
+}
+.member,
+.envelope {
+  fill: none;
+  stroke-width: var(--trace);
+}
+.envelope {
+  stroke-width: var(--stroke);
+}
+.member {
+  transition: stroke var(--member-transition) linear;
+}
+.t-zero-mark,
+.t-zero-label,
+.local-tick,
+.model-name,
+.pane-count {
+  fill: var(--ink);
+}
+.handle-local,
+.handle-utc {
+  fill: var(--ink);
+}
+.cursor-control,
+.sr-only,
+.stacked thead {
+  position: absolute;
+  inset: var(--s0);
+  width: var(--hair);
+  height: var(--hair);
+  clip-path: inset(var(--clip-half));
+  overflow: hidden;
+}
+.chart-notes {
+  gap: var(--s2);
+  padding-block: var(--s1);
+}
+.keyboard-hint {
+  margin-block: var(--s2);
+}
+.member.exceed {
+  stroke: var(--accent);
+  stroke-width: var(--exceed);
+}
+.window-scrubber .plot {
+  height: var(--interactive-plot-height);
+}
+.window-scrubber .plot-wrap {
+  cursor: grab;
+}
+.window-scrubber .plot-wrap:active {
+  cursor: grabbing;
+}
+.plot-wrap:has(.cursor-control:focus-visible) .cursor-handle {
+  stroke: var(--focus);
+  stroke-width: var(--exceed);
+}
+.window-scrubber .pane-count {
+  font-size: var(--text-base);
+}
+.threshold-label {
+  font-size: var(--text-sm);
+  fill: var(--rule);
+}
+.rule-pick {
+  padding: var(--s0);
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline var(--hair) dotted;
+  text-underline-offset: var(--s1);
+  cursor: pointer;
+}
+.rule-pick[aria-pressed="true"] {
+  text-decoration: underline var(--stroke) solid;
+}
+.board-clear,
+.models {
+  font: var(--text-lg) / var(--leading-tight) var(--display);
+  margin-block: var(--s4);
+}

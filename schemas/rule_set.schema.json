@@ -1,0 +1,221 @@
+{
+  "$defs": {
+    "Confidence": {
+      "description": "Evidence strength of a model-based rule assessment.",
+      "enum": [
+        "direct",
+        "medium",
+        "low"
+      ],
+      "title": "Confidence",
+      "type": "string"
+    },
+    "NotEvaluable": {
+      "description": "Criterion omitted from verdicts because the required evidence is unavailable.",
+      "properties": {
+        "llccr": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Llccr",
+          "type": "array"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "rule_id",
+        "title",
+        "llccr",
+        "reason"
+      ],
+      "title": "NotEvaluable",
+      "type": "object"
+    },
+    "Parameter": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "Plot": {
+      "description": "Parameter references shared by the verdict, threshold line and readout.",
+      "properties": {
+        "comparator_param": {
+          "title": "Comparator Param",
+          "type": "string"
+        },
+        "readout_phrase": {
+          "title": "Readout Phrase",
+          "type": "string"
+        },
+        "threshold_param": {
+          "title": "Threshold Param",
+          "type": "string"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        },
+        "variable": {
+          "title": "Variable",
+          "type": "string"
+        }
+      },
+      "required": [
+        "variable",
+        "unit",
+        "threshold_param",
+        "comparator_param",
+        "readout_phrase"
+      ],
+      "title": "Plot",
+      "type": "object"
+    },
+    "Rule": {
+      "description": "Published criterion and its explicitly approximate model proxy.",
+      "properties": {
+        "approximation_note": {
+          "title": "Approximation Note",
+          "type": "string"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        },
+        "evaluation": {
+          "const": "proxy",
+          "title": "Evaluation",
+          "type": "string"
+        },
+        "llccr": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Llccr",
+          "type": "array"
+        },
+        "needs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Needs",
+          "type": "array"
+        },
+        "origin": {
+          "additionalProperties": {
+            "const": "scrub",
+            "type": "string"
+          },
+          "title": "Origin",
+          "type": "object"
+        },
+        "plot": {
+          "$ref": "#/$defs/Plot"
+        },
+        "proxy": {
+          "additionalProperties": {
+            "$ref": "#/$defs/Parameter"
+          },
+          "title": "Proxy",
+          "type": "object"
+        },
+        "reference_only": {
+          "default": false,
+          "title": "Reference Only",
+          "type": "boolean"
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "section": {
+          "title": "Section",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "rule_id",
+        "title",
+        "llccr",
+        "section",
+        "text",
+        "evaluation",
+        "confidence",
+        "needs",
+        "proxy",
+        "plot",
+        "approximation_note"
+      ],
+      "title": "Rule",
+      "type": "object"
+    },
+    "SourceDate": {
+      "format": "date",
+      "type": "string"
+    }
+  },
+  "description": "Dated source criteria loaded together before any launch is assessed.",
+  "properties": {
+    "not_evaluable": {
+      "items": {
+        "$ref": "#/$defs/NotEvaluable"
+      },
+      "title": "Not Evaluable",
+      "type": "array"
+    },
+    "rule_set_id": {
+      "title": "Rule Set Id",
+      "type": "string"
+    },
+    "rules": {
+      "items": {
+        "$ref": "#/$defs/Rule"
+      },
+      "title": "Rules",
+      "type": "array"
+    },
+    "source_date": {
+      "$ref": "#/$defs/SourceDate"
+    },
+    "source_url": {
+      "title": "Source Url",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "rule_set_id",
+    "version",
+    "source_url",
+    "source_date",
+    "rules",
+    "not_evaluable"
+  ],
+  "title": "RuleSet",
+  "type": "object"
+}

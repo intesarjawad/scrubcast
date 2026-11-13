@@ -1,0 +1,19 @@
+HTTP 200
+date: Fri, 06 Nov 2026 01:29:53 GMT
+content-type: application/json
+content-length: 78614
+connection: keep-alive
+server: cloudflare
+vary: Accept, Cookie, Accept-Encoding, origin
+allow: GET
+x-frame-options: SAMEORIGIN
+content-encoding: gzip
+x-content-type-options: nosniff
+referrer-policy: same-origin
+cross-origin-opener-policy: same-origin
+strict-transport-security: max-age=300; includeSubDomains
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: DYNAMIC
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WqBT2j5tVzcYDZpSt7AUuf7vaKeHoMfdrXel0685R5Q3aR5ukaUSBDspi25%2Bm0JohINTB1U1KxnSxVCVy7oSuj5l5J6oQL9VYBqwzHQRcAYqUxB4jGPP0aQFCJatmdAe2kRb0cSj"}]}
+cf-ray: a560545c59bd8f63-DFW

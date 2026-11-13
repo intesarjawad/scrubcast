@@ -1,0 +1,32 @@
+minimum_pre_commit_version: "4.7.0"
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-format
+        name: Python format
+        entry: uv run --locked ruff format --check
+        language: system
+        types: [python]
+      - id: ruff
+        name: Python lint
+        entry: uv run --locked ruff check
+        language: system
+        types: [python]
+      - id: pyright
+        name: Python types
+        entry: uv run --locked pyright
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: site-check
+        name: Site format, lint and types
+        entry: npm --prefix site run check
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: gitleaks
+        name: Staged secrets
+        entry: gitleaks git --staged --redact
+        language: system
+        pass_filenames: false
+        always_run: true

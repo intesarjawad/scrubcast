@@ -1,0 +1,285 @@
+{
+  "generated_at": "2026-11-05T08:59:17.521306Z",
+  "schedule_stale": false,
+  "launches": [
+    {
+      "id": "711de6bc-f755-475b-a12f-ec5240da3a11",
+      "name": "Long March 2C | Unknown Payload",
+      "slug": "long-march-2c-unknown-payload",
+      "status": "Go",
+      "net": "2026-11-05T16:00:00Z",
+      "net_precision": "HR",
+      "window_start": "2026-11-05T15:52:00Z",
+      "window_end": "2026-11-05T16:16:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "China Aerospace Science and Technology Corporation",
+      "rocket_name": "Long March 2C",
+      "pad": {
+        "id": 66,
+        "name": "Launch Complex 3 (LC-3/LA-1)",
+        "latitude": 28.247059,
+        "longitude": 102.029008,
+        "location": {
+          "id": 16,
+          "name": "Xichang Satellite Launch Center, People's Republic of China",
+          "timezone_name": "Asia/Shanghai"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "N/A"
+        }
+      },
+      "last_updated": "2026-10-30T13:34:13Z"
+    },
+    {
+      "id": "e91d1da2-819b-4523-95bf-39ac7daa871d",
+      "name": "Ceres-2 | Unknown Payload",
+      "slug": "ceres-2-unknown-payload",
+      "status": "Go",
+      "net": "2026-11-06T23:35:00Z",
+      "net_precision": "HR",
+      "window_start": "2026-11-06T23:28:00Z",
+      "window_end": "2026-11-06T23:50:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "Galactic Energy",
+      "rocket_name": "Ceres-2",
+      "pad": {
+        "id": 21,
+        "name": "Launch Area 95A",
+        "latitude": 40.969117,
+        "longitude": 100.343333,
+        "location": {
+          "id": 17,
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "timezone_name": "Asia/Shanghai"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "N/A"
+        }
+      },
+      "last_updated": "2026-11-02T02:55:01Z"
+    },
+    {
+      "id": "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae",
+      "name": "Falcon 9 Block 5 | USSF-432",
+      "slug": "falcon-9-block-5-ussf-432",
+      "status": "Go",
+      "net": "2026-11-07T00:46:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-07T00:46:00Z",
+      "window_end": "2026-11-07T04:46:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-04T00:46:25Z"
+    },
+    {
+      "id": "a2423132-f965-423f-8b03-6891b775dc54",
+      "name": "Long March 12 | SatNet LEO Group TBD?",
+      "slug": "long-march-12-satnet-leo-group-tbd",
+      "status": "Go",
+      "net": "2026-11-08T20:25:00Z",
+      "net_precision": "HR",
+      "window_start": "2026-11-08T20:17:00Z",
+      "window_end": "2026-11-08T20:47:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "China Aerospace Science and Technology Corporation",
+      "rocket_name": "Long March 12",
+      "pad": {
+        "id": 219,
+        "name": "Commercial LC-2",
+        "latitude": 19.59755,
+        "longitude": 110.936481,
+        "location": {
+          "id": 8,
+          "name": "Wenchang Space Launch Site, People's Republic of China",
+          "timezone_name": "Asia/Shanghai"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-03T13:09:32Z"
+    },
+    {
+      "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
+      "name": "Falcon 9 Block 5 | USSF-627",
+      "slug": "falcon-9-block-5-ussf-627",
+      "status": "Go",
+      "net": "2026-11-10T03:03:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-10T03:03:00Z",
+      "window_end": "2026-11-10T07:03:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-04T20:05:21Z"
+    },
+    {
+      "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
+      "name": "Mir | Demo Flight",
+      "slug": "mir-demo-flight",
+      "status": "Go",
+      "net": "2026-11-10T06:00:00Z",
+      "net_precision": "HR",
+      "window_start": "2026-11-10T06:00:00Z",
+      "window_end": "2026-11-10T09:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "Agency for Defense Development",
+      "rocket_name": "Mir",
+      "pad": {
+        "id": 216,
+        "name": "ADD Offshore launch platform",
+        "latitude": 33.216667,
+        "longitude": 126.366667,
+        "location": {
+          "id": 3,
+          "name": "Sea Launch",
+          "timezone_name": ""
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-05T02:58:19Z"
+    },
+    {
+      "id": "d66590ab-b273-47ff-b85a-608b62851b4b",
+      "name": "Long March 2D | Unknown Payload",
+      "slug": "long-march-2d-unknown-payload",
+      "status": "Go",
+      "net": "2026-11-11T11:40:00Z",
+      "net_precision": "HR",
+      "window_start": "2026-11-11T11:32:00Z",
+      "window_end": "2026-11-11T12:05:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "China Aerospace Science and Technology Corporation",
+      "rocket_name": "Long March 2D",
+      "pad": {
+        "id": 22,
+        "name": "Launch Area 94 (SLS-2 / 603)",
+        "latitude": 40.960482,
+        "longitude": 100.298059,
+        "location": {
+          "id": 17,
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "timezone_name": "Asia/Shanghai"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "N/A"
+        }
+      },
+      "last_updated": "2026-11-05T06:42:19Z"
+    },
+    {
+      "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
+      "name": "Falcon 9 Block 5 | USSF-317",
+      "slug": "falcon-9-block-5-ussf-317",
+      "status": "Go",
+      "net": "2026-11-13T04:23:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-13T04:23:00Z",
+      "window_end": "2026-11-13T08:23:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-04T20:05:26Z"
+    },
+    {
+      "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
+      "name": "Vulcan VC6L | Amazon Leo (LV-01)",
+      "slug": "vulcan-vc6l-amazon-leo-lv-01",
+      "status": "Go",
+      "net": "2026-11-13T17:54:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-13T17:54:00Z",
+      "window_end": "2026-11-13T18:24:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "United Launch Alliance",
+      "rocket_name": "Vulcan VC6L",
+      "pad": {
+        "id": 29,
+        "name": "Space Launch Complex 41",
+        "latitude": 28.58341025,
+        "longitude": -80.58303644,
+        "location": {
+          "id": 12,
+          "name": "Cape Canaveral SFS, FL, USA",
+          "timezone_name": "America/New_York"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-03T17:22:50Z"
+    }
+  ]
+}

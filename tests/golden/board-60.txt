@@ -1,0 +1,10 @@
+Scrubcast launch weather
+Generated 2026-11-06 01:30 UTC. Members: 82.
+
+1. Falcon 9 Block 5 | USSF-432
+   Space Launch Complex 4E, Vandenberg SFB, CA, USA
+   NET 2026-11-06 16:46 PST (2026-11-07 00:46 UTC)
+   Window 2026-11-06 16:46 PST to 2026-11-06 20:46 PST
+          (2026-11-07 00:46 to 2026-11-07 04:46 UTC)
+   Official: not published
+   Worst rule: No rule above 5%

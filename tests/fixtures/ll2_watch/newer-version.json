@@ -1,0 +1,6 @@
+{
+  "documentation": "<a href=\"https://ll.thespacedevs.com/2.3.0/launches/\">Launches</a><a href=\"https://ll.thespacedevs.com/2.4.0/launches/\">Launches</a>",
+  "headers": {},
+  "body": "[\"launches\"]",
+  "expected": "documented version 2.4.0"
+}

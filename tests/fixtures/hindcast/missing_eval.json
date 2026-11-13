@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-05T08:59:17.521306Z",
+  "lowest_hour_verified": true,
+  "summary": [
+    "Wind input against observation: not estimated (n=12)",
+    "Rule against observation: not estimated (n=12)",
+    "Agreement with the official forecast: not estimated (n=12)"
+  ],
+  "forecast_audit": {
+    "n_launches": 12,
+    "evaluations": [
+      {
+        "key": "wind",
+        "title": "Wind input against observation",
+        "label": "ECMWF and GFS 10 m wind members at the hour of the final NET checked against METAR. The reference is a climatological ensemble from ten years of METAR at the same station, calendar day within 15 days and hour within 1 hour.",
+        "summary": "Wind input against observation: not estimated (n=12)",
+        "n": 12,
+        "rows": [
+          {
+            "label": "ECMWF wind CRPS (m/s)",
+            "n": 12,
+            "value": null,
+            "baseline": 7.619047619047618,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "ECMWF wind CRPS skill",
+            "n": 12,
+            "value": null,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "GFS wind CRPS (m/s)",
+            "n": 12,
+            "value": null,
+            "baseline": 7.619047619047618,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "GFS wind CRPS skill",
+            "n": 12,
+            "value": null,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          }
+        ],
+        "reliability": null,
+        "rank_histogram": null,
+        "rank_histograms": null
+      },
+      {
+        "key": "observation",
+        "title": "Rule against observation",
+        "label": "The flight-through-precipitation rule at the 24-hour bucket checked against the observed precipitation event in the hour of the final NET. The reference is the station's climatological event frequency from the same ten-year METAR sample.",
+        "summary": "Rule against observation: not estimated (n=12)",
+        "n": 12,
+        "rows": [
+          {
+            "label": "flight_through_precip Brier score",
+            "n": 12,
+            "value": null,
+            "baseline": 0.25,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "flight_through_precip Brier skill",
+            "n": 12,
+            "value": null,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          }
+        ],
+        "reliability": null,
+        "rank_histogram": null,
+        "rank_histograms": null
+      },
+      {
+        "key": "concerns",
+        "title": "Agreement with the official forecast",
+        "label": "Agreement with the official forecast: the Brier-form score of rule risk at 24 hours against the rule being named in the official concerns. Official concerns are another forecast, not an observed outcome, so this is an agreement measure.",
+        "summary": "Agreement with the official forecast: not estimated (n=12)",
+        "n": 12,
+        "rows": [
+          {
+            "label": "cumulus Brier score",
+            "n": 12,
+            "value": null,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "All direct and medium rules Brier score",
+            "n": 12,
+            "value": null,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          }
+        ],
+        "reliability": null,
+        "rank_histogram": null,
+        "rank_histograms": null
+      }
+    ],
+    "attempts": {
+      "label": "Attempt outcomes: launched in the window against did not launch in it, all causes: non-weather scrubs included. Unknown outcomes are excluded and counted. This is the weakest of the evaluations.",
+      "n": 12,
+      "launched": 6,
+      "not_launched": 6,
+      "unknown": 0,
+      "rows": [
+        {
+          "attempt_id": "audit-00",
+          "net": "2025-01-01T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-01",
+          "net": "2025-02-10T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-02",
+          "net": "2025-03-22T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-03",
+          "net": "2025-05-01T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-04",
+          "net": "2025-06-10T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-05",
+          "net": "2025-07-20T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-06",
+          "net": "2025-08-29T12:00:00Z",
+          "union_risk": 0.9,
+          "official_go_pct": 90,
+          "outcome": "launched_later",
+          "note": "Launch delayed.",
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-07",
+          "net": "2025-10-08T12:00:00Z",
+          "union_risk": 0.9,
+          "official_go_pct": 90,
+          "outcome": "launched_later",
+          "note": "Launch delayed.",
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-08",
+          "net": "2025-11-17T12:00:00Z",
+          "union_risk": 0.9,
+          "official_go_pct": 90,
+          "outcome": "launched_later",
+          "note": "Launch delayed.",
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-09",
+          "net": "2025-12-27T12:00:00Z",
+          "union_risk": 0.9,
+          "official_go_pct": 90,
+          "outcome": "launched_later",
+          "note": "Launch delayed.",
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-10",
+          "net": "2026-02-05T12:00:00Z",
+          "union_risk": 0.9,
+          "official_go_pct": 90,
+          "outcome": "launched_later",
+          "note": "Launch delayed.",
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-11",
+          "net": "2026-03-17T12:00:00Z",
+          "union_risk": 0.9,
+          "official_go_pct": 90,
+          "outcome": "launched_later",
+          "note": "Launch delayed.",
+          "scored": true
+        }
+      ],
+      "auc": null,
+      "interval": [
+        1.0,
+        1.0
+      ],
+      "message": null
+    },
+    "lowest_hour": {
+      "label": "The lowest modelled-risk hour checked against observed precipitation only, not cloud or wind.",
+      "n": 12,
+      "risk_at_lowest": 0.05000000000000001,
+      "risk_at_t0": 0.5,
+      "precipitation_at_lowest": 0.0,
+      "precipitation_at_t0": 1.0,
+      "difference": -1.0,
+      "interval": [
+        -1.0,
+        -1.0
+      ],
+      "verified": true
+    },
+    "lowest_hour_verified": true
+  }
+}

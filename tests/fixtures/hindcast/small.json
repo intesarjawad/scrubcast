@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-05T08:59:17.521306Z",
+  "lowest_hour_verified": false,
+  "summary": [
+    "Wind: insufficient data (n=4)",
+    "Precipitation: insufficient data (n=4)",
+    "Official concerns: insufficient data (n=4)"
+  ],
+  "forecast_audit": {
+    "n_launches": 4,
+    "evaluations": [
+      {
+        "key": "wind",
+        "title": "Wind input against observation",
+        "label": "ECMWF and GFS 10 m wind members at the hour of the final NET checked against METAR. The reference is a climatological ensemble from ten years of METAR at the same station, calendar day within 15 days and hour within 1 hour.",
+        "summary": "Wind: insufficient data (n=4)",
+        "n": 4,
+        "rows": [
+          {
+            "label": "ECMWF wind CRPS (m/s)",
+            "n": 4,
+            "value": 1.0,
+            "baseline": 8.095238095238095,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "ECMWF wind CRPS skill",
+            "n": 4,
+            "value": 0.8764705882352941,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "GFS wind CRPS (m/s)",
+            "n": 4,
+            "value": 1.0,
+            "baseline": 8.095238095238095,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "GFS wind CRPS skill",
+            "n": 4,
+            "value": 0.8764705882352941,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          }
+        ],
+        "reliability": null,
+        "rank_histogram": null,
+        "rank_histograms": null
+      },
+      {
+        "key": "observation",
+        "title": "Rule against observation",
+        "label": "The flight-through-precipitation rule at the 24-hour bucket checked against the observed precipitation event in the hour of the final NET. The reference is the station's climatological event frequency from the same ten-year METAR sample.",
+        "summary": "Precipitation: insufficient data (n=4)",
+        "n": 4,
+        "rows": [
+          {
+            "label": "flight_through_precip Brier score",
+            "n": 4,
+            "value": 0.25,
+            "baseline": 0.25,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "flight_through_precip Brier skill",
+            "n": 4,
+            "value": 0.0,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          }
+        ],
+        "reliability": null,
+        "rank_histogram": null,
+        "rank_histograms": null
+      },
+      {
+        "key": "concerns",
+        "title": "Agreement with the official forecast",
+        "label": "Agreement with the official forecast: the Brier-form score of rule risk at 24 hours against the rule being named in the official concerns. Official concerns are another forecast, not an observed outcome, so this is an agreement measure.",
+        "summary": "Official concerns: insufficient data (n=4)",
+        "n": 4,
+        "rows": [
+          {
+            "label": "cumulus Brier score",
+            "n": 4,
+            "value": 0.25,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          },
+          {
+            "label": "All direct and medium rules Brier score",
+            "n": 4,
+            "value": 0.25,
+            "baseline": 0.0,
+            "interval": null,
+            "sufficient": false
+          }
+        ],
+        "reliability": null,
+        "rank_histogram": null,
+        "rank_histograms": null
+      }
+    ],
+    "attempts": {
+      "label": "Attempt outcomes: launched in the window against did not launch in it, all causes: non-weather scrubs included. Unknown outcomes are excluded and counted. This is the weakest of the evaluations.",
+      "n": 4,
+      "launched": 4,
+      "not_launched": 0,
+      "unknown": 0,
+      "rows": [
+        {
+          "attempt_id": "audit-00",
+          "net": "2025-01-01T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-01",
+          "net": "2025-02-10T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-02",
+          "net": "2025-03-22T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        },
+        {
+          "attempt_id": "audit-03",
+          "net": "2025-05-01T12:00:00Z",
+          "union_risk": 0.1,
+          "official_go_pct": 90,
+          "outcome": "launched",
+          "note": null,
+          "scored": true
+        }
+      ],
+      "auc": null,
+      "interval": null,
+      "message": "insufficient data (attempts not launched n=0)"
+    },
+    "lowest_hour": {
+      "label": "The lowest modelled-risk hour checked against observed precipitation only, not cloud or wind.",
+      "n": 4,
+      "risk_at_lowest": 0.05,
+      "risk_at_t0": 0.1,
+      "precipitation_at_lowest": 0.0,
+      "precipitation_at_t0": 1.0,
+      "difference": -1.0,
+      "interval": [
+        -1.0,
+        -1.0
+      ],
+      "verified": false
+    },
+    "lowest_hour_verified": false
+  }
+}

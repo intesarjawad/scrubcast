@@ -1,0 +1,9 @@
+{
+  "documentation": "<a href=\"https://ll.thespacedevs.com/2.3.0/launches/\">Launches</a>",
+  "headers": {
+    "Deprecation": "true",
+    "Sunset": "Wed, 01 Jan 2027 00:00:00 GMT"
+  },
+  "body": "[\"launches\"]",
+  "expected": "Deprecation: true"
+}

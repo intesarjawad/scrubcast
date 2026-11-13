@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "label": "Scrubcast wind",
+  "message": "ECMWF wind skill 86.9% (n=12)",
+  "color": "yellow"
+}

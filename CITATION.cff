@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: If you use Scrubcast or its published assessments, please cite it as below.
+title: "Scrubcast: launch weather rules checked against ensemble forecasts"
+type: software
+authors:
+  - family-names: Jawad
+    given-names: Intesar
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/intesarjawad/scrubcast"
+url: "https://scrubcast.intesarjawad.com/"
+abstract: >-
+  Scrubcast checks each published launch weather rule against the ECMWF and GFS ensemble
+  members for every hour of a launch window, shows the official forecast beside it, and
+  scores its own forecasts after every launch.
+keywords:
+  - launch weather
+  - ensemble forecast
+  - forecast verification
+  - spaceflight

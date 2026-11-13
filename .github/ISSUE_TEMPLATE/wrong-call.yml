@@ -1,0 +1,17 @@
+name: Assessment discrepancy
+description: Report an assessment that differs from observations or official statements.
+title: "Assessment discrepancy: "
+body:
+  - type: input
+    id: launch
+    attributes:
+      label: Launch identifier and assessment time in UTC
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and expected result
+      description: Include the assessment, affected rule, observed conditions and official source links.
+    validations:
+      required: true

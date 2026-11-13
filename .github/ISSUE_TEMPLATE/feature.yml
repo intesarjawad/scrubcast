@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest a change to Scrubcast.
+title: "Feature: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Include alternatives or examples if useful.
+    validations:
+      required: true

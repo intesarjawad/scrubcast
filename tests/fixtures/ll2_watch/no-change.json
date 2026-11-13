@@ -1,0 +1,6 @@
+{
+  "documentation": "<a href=\"https://ll.thespacedevs.com/2.3.0/launches/\">Launches</a>",
+  "headers": {},
+  "body": "[\"launches\", \"events\"]",
+  "expected": null
+}

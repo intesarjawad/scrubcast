@@ -1,0 +1,9 @@
+# 0010: Preserve recorded demo evidence when official forecasts are absent
+
+I keep the demo launch identity, window and weather values exactly as supplied by Launch Library 2 and Open-Meteo. The assessment is produced by the same source clients, paced collector and assessment command used for live forecasts. I retain every schedule page, the weather response, original response headers, retrieval timestamps, the package version and SHA-256 digests of the recording and assessment inputs.
+
+I prefer the nearest Florida Falcon 9 with both official forecast fields inside the forecast horizon. If none is available, I use the nearest upcoming Falcon 9 at a covered Florida or California pad inside that horizon. This preserves vehicle rule coverage and an assessable real window. I do not move a launch window to match interesting weather or substitute a past official forecast for a missing current one.
+
+The initial recording has no upcoming launch with both official forecast fields. The nearest covered Falcon 9 is at Vandenberg. Its official probability and concerns are null, so the demo omits the official block. Both models return zero precipitation throughout the sampled launch window. I preserve those repeated source zeros, with each hour checked independently against the raw response. All evaluable rules are clear and there is no material lowest-risk hour. The provenance records these limitations. A more dramatic recording requires different source weather, never edited values.
+
+The recorded assessment and index are immutable expectations. Offline replay must reproduce both before publishing demo data. UI tests calculate display expectations from the saved evidence without calling the rendering functions under test. The storyboard exercises missing official evidence explicitly and retains the hour-by-hour inspection even when every count is zero.

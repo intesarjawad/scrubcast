@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Follow the weather that could hold up the next rocket launch." />
+    <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preload" href="%BASE_URL%fonts/eb-garamond-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="%BASE_URL%fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Scrubcast</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Skip to content</a>
+    <header class="site-header frame">
+      <a class="wordmark" href="%BASE_URL%">Scrubcast</a>
+      <nav aria-label="Main navigation">
+        <a data-route="home" href="%BASE_URL%">Launches</a>
+        <a data-route="next" href="%BASE_URL%next/">Next launch</a>
+        <a data-route="audit" href="%BASE_URL%audit/">Audit</a>
+      </nav>
+    </header>
+    <main id="app" class="frame" tabindex="-1"></main>
+    <footer class="site-footer frame">
+      <p class="footer-name">Scrubcast</p>
+      <div class="footer-notes">
+        <p>Official forecasts and modelled rules are separate sources.</p>
+        <p>Model member shares are not probabilities.</p>
+      </div>
+      <a href="%BASE_URL%audit/">Read the audit</a>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

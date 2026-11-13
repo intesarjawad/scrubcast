@@ -1,0 +1,55 @@
+.card-page {
+  width: var(--share-width);
+  height: var(--share-height);
+  padding: var(--s6) var(--s7);
+}
+.card-page #app {
+  height: var(--full);
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--s6);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s6);
+}
+.card-statement h2 {
+  font-size: var(--text-title);
+}
+.card-page :is(.spread, .spread-grid) {
+  height: var(--full);
+  max-width: none;
+  padding: var(--s0);
+  border: none;
+}
+.card-page .spread-grid {
+  gap: var(--s8);
+}
+.card-page :is(.pages-control, .unseen) {
+  display: none;
+}
+.card-page .sheet-page {
+  font-size: var(--text-md);
+}
+.card-page .sheet-page :is(.page-status, .page-who) {
+  font-size: var(--text-md);
+}
+.card-page .sheet-title {
+  font-size: var(--text-title);
+}
+.card-page .sheet-facts {
+  margin-top: auto;
+}
+.card-verdict {
+  font: var(--text-title) / var(--leading-title) var(--display);
+  margin-top: var(--s5);
+}
+.card-page .sheet-page p {
+  margin-bottom: var(--s3);
+}
+.card-page .fan {
+  padding-top: var(--s3);
+}

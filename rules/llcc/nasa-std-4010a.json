@@ -1,0 +1,240 @@
+{
+  "rule_set_id": "llcc-nasa-std-4010a",
+  "version": "2023-09-12+scrubcast.1",
+  "source_url": "https://standards.nasa.gov/sites/default/files/standards/NASA/A/0/NASA-STD-4010A-Approved.pdf",
+  "source_date": "2023-09-12",
+  "rules": [
+    {
+      "rule_id": "thick_cloud",
+      "title": "Thick Cloud Layers Rule",
+      "llccr": [
+        22,
+        23,
+        24
+      ],
+      "section": "4.1.8",
+      "text": "Do not launch through a non-transparent cloud layer at least 1.4 km thick with any part between 0 and -20 °C within 5 nmi slant distance of the flight path.",
+      "evaluation": "proxy",
+      "confidence": "medium",
+      "needs": [
+        "cloud_cover_levels",
+        "temperature_levels",
+        "geopotential_height_levels"
+      ],
+      "proxy": {
+        "kind": "thick_cloud",
+        "cloud_cover_min_pct": 50,
+        "thickness_min_m": 1400,
+        "thickness_comparator": ">=",
+        "t_min_c": -20,
+        "t_max_c": 0
+      },
+      "origin": {
+        "cloud_cover_min_pct": "scrub"
+      },
+      "plot": {
+        "variable": "qualifying_layer_thickness",
+        "unit": "m",
+        "threshold_param": "thickness_min_m",
+        "comparator_param": "thickness_comparator",
+        "readout_phrase": "have a cloud layer {thickness_min_m} m or thicker between {t_max_c} and {t_min_c} °C"
+      },
+      "approximation_note": "Cloud cover is estimated from relative humidity on ten pressure levels at one grid point. Layer thickness is quantised to level spacing. The cirriform and radar exemptions cannot be evaluated, so this proxy over-reads."
+    },
+    {
+      "rule_id": "cumulus",
+      "title": "Cumulus Cloud Rule",
+      "llccr": [
+        9,
+        10,
+        11
+      ],
+      "section": "4.1.3",
+      "text": "Cumulus restrictions depend on cloud-top temperature and distance from the flight path.",
+      "evaluation": "proxy",
+      "confidence": "low",
+      "needs": [
+        "cape",
+        "precipitation",
+        "cloud_cover_levels",
+        "temperature_levels"
+      ],
+      "proxy": {
+        "kind": "cumulus",
+        "cape_min_jkg": 300,
+        "cape_comparator": ">=",
+        "precip_min_mmh": 0.254,
+        "precip_comparator": ">",
+        "cloud_cover_min_pct": 30,
+        "t_max_c": -5
+      },
+      "origin": {
+        "cape_min_jkg": "scrub",
+        "cloud_cover_min_pct": "scrub"
+      },
+      "plot": {
+        "variable": "cape",
+        "unit": "J/kg",
+        "threshold_param": "cape_min_jkg",
+        "comparator_param": "cape_comparator",
+        "readout_phrase": "have convective cloud reaching {t_max_c} °C (CAPE {cape_min_jkg} J/kg or more with precipitation above {precip_min_mmh} mm/h and cloud cover at least {cloud_cover_min_pct}%)"
+      },
+      "approximation_note": "CAPE and cloud cover are convective stand-ins. One grid point cannot resolve cloud type, distance or the published exemptions."
+    },
+    {
+      "rule_id": "anvil",
+      "title": "Anvil Cloud Rules",
+      "llccr": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "section": "4.1.4-4.1.5",
+      "text": "Attached and detached anvil restrictions depend on distance, temperature and cloud history.",
+      "evaluation": "proxy",
+      "confidence": "low",
+      "needs": [
+        "cape",
+        "precipitation",
+        "cloud_cover_high"
+      ],
+      "proxy": {
+        "kind": "anvil",
+        "cape_min_jkg": 1000,
+        "cape_comparator": ">=",
+        "precip_min_mmh": 2.54,
+        "precip_comparator": ">",
+        "cloud_cover_high_min_pct": 50
+      },
+      "origin": {
+        "cape_min_jkg": "scrub",
+        "cloud_cover_high_min_pct": "scrub"
+      },
+      "plot": {
+        "variable": "cape",
+        "unit": "J/kg",
+        "threshold_param": "cape_min_jkg",
+        "comparator_param": "cape_comparator",
+        "readout_phrase": "have a thunderstorm with a high cloud shield in the grid cell (CAPE {cape_min_jkg} J/kg or more, precipitation above {precip_min_mmh} mm/h and high cloud at least {cloud_cover_high_min_pct}%)"
+      },
+      "approximation_note": "CAPE and high cloud cover stand in for a thunderstorm and anvil. Distance, cloud age and exemptions cannot be resolved."
+    },
+    {
+      "rule_id": "disturbed_weather",
+      "title": "Disturbed Weather Rule",
+      "llccr": [
+        21
+      ],
+      "section": "4.1.7",
+      "text": "Disturbed weather restrictions include moderate or greater precipitation associated with freezing cloud.",
+      "evaluation": "proxy",
+      "confidence": "medium",
+      "needs": [
+        "precipitation",
+        "cloud_cover_levels",
+        "temperature_levels"
+      ],
+      "proxy": {
+        "kind": "disturbed_weather",
+        "precip_min_mmh": 2.54,
+        "precip_comparator": ">",
+        "cloud_cover_min_pct": 30,
+        "t_max_c": 0
+      },
+      "origin": {
+        "cloud_cover_min_pct": "scrub"
+      },
+      "plot": {
+        "variable": "precipitation",
+        "unit": "mm/h",
+        "threshold_param": "precip_min_mmh",
+        "comparator_param": "precip_comparator",
+        "readout_phrase": "have precipitation above {precip_min_mmh} mm/h under cloud cover at least {cloud_cover_min_pct}% below {t_max_c} °C"
+      },
+      "approximation_note": "Cloud cover is a stand-in for non-transparent cloud. Model output cannot establish flight-path distance or radar exemptions."
+    },
+    {
+      "rule_id": "flight_through_precip",
+      "title": "Flight Through Precipitation",
+      "llccr": [],
+      "section": "4.2.2",
+      "text": "Precipitation detection uses the LLCC definition; the vehicle-specific flight-through-precipitation threshold is not public.",
+      "evaluation": "proxy",
+      "confidence": "low",
+      "needs": [
+        "precipitation"
+      ],
+      "proxy": {
+        "kind": "flight_through_precip",
+        "precip_min_mmh": 0.254,
+        "precip_comparator": ">"
+      },
+      "origin": {},
+      "plot": {
+        "variable": "precipitation",
+        "unit": "mm/h",
+        "threshold_param": "precip_min_mmh",
+        "comparator_param": "precip_comparator",
+        "readout_phrase": "have precipitation above {precip_min_mmh} mm/h"
+      },
+      "approximation_note": "Named in official Falcon concerns. The vehicle threshold is not public; this proxy uses the LLCC precipitation detection definition."
+    }
+  ],
+  "not_evaluable": [
+    {
+      "rule_id": "lightning",
+      "title": "Lightning",
+      "llccr": [
+        5,
+        6
+      ],
+      "reason": "Needs observed lightning distance and timing; the ensemble has no lightning field."
+    },
+    {
+      "rule_id": "surface_electric_fields",
+      "title": "Surface Electric Fields",
+      "llccr": [
+        7,
+        8
+      ],
+      "reason": "Field-mill readings are not public in real time."
+    },
+    {
+      "rule_id": "debris_cloud",
+      "title": "Debris Clouds",
+      "llccr": [
+        18,
+        19,
+        20
+      ],
+      "reason": "Needs radar and cloud history."
+    },
+    {
+      "rule_id": "smoke_plume",
+      "title": "Smoke Plumes",
+      "llccr": [
+        25,
+        26
+      ],
+      "reason": "Not observable from model output."
+    },
+    {
+      "rule_id": "triboelectrification",
+      "title": "Triboelectrification",
+      "llccr": [
+        27,
+        28
+      ],
+      "reason": "Vehicle-specific exemption status unknown."
+    },
+    {
+      "rule_id": "booster_recovery",
+      "title": "Booster recovery and downrange weather",
+      "llccr": [],
+      "reason": "Recovery zone and downrange limits are mission-specific and not public."
+    }
+  ]
+}

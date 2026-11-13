@@ -1,0 +1,564 @@
+{
+  "$defs": {
+    "AttemptEvaluation": {
+      "description": "Launch-versus-scrub comparison, kept separate from calibration metrics.",
+      "properties": {
+        "auc": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Auc"
+        },
+        "interval": {
+          "anyOf": [
+            {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Interval"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "launched": {
+          "title": "Launched",
+          "type": "integer"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        },
+        "n": {
+          "title": "N",
+          "type": "integer"
+        },
+        "not_launched": {
+          "title": "Not Launched",
+          "type": "integer"
+        },
+        "rows": {
+          "items": {
+            "$ref": "#/$defs/AttemptRow"
+          },
+          "title": "Rows",
+          "type": "array"
+        },
+        "unknown": {
+          "title": "Unknown",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "label",
+        "n",
+        "launched",
+        "not_launched",
+        "unknown",
+        "rows"
+      ],
+      "title": "AttemptEvaluation",
+      "type": "object"
+    },
+    "AttemptRow": {
+      "description": "One audited attempt with its 24-hour union risk and official GO value.",
+      "properties": {
+        "attempt_id": {
+          "title": "Attempt Id",
+          "type": "string"
+        },
+        "net": {
+          "format": "date-time",
+          "title": "Net",
+          "type": "string"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Note"
+        },
+        "official_go_pct": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Official Go Pct"
+        },
+        "outcome": {
+          "$ref": "#/$defs/Outcome"
+        },
+        "scored": {
+          "title": "Scored",
+          "type": "boolean"
+        },
+        "union_risk": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Union Risk"
+        }
+      },
+      "required": [
+        "attempt_id",
+        "net",
+        "union_risk",
+        "official_go_pct",
+        "outcome",
+        "note",
+        "scored"
+      ],
+      "title": "AttemptRow",
+      "type": "object"
+    },
+    "AuditMetric": {
+      "description": "A printed metric with its sample size and the reference it is read against.",
+      "properties": {
+        "baseline": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Baseline"
+        },
+        "interval": {
+          "anyOf": [
+            {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Interval"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "n": {
+          "minimum": 0,
+          "title": "N",
+          "type": "integer"
+        },
+        "sufficient": {
+          "default": false,
+          "title": "Sufficient",
+          "type": "boolean"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        }
+      },
+      "required": [
+        "label",
+        "n"
+      ],
+      "title": "AuditMetric",
+      "type": "object"
+    },
+    "Evaluation": {
+      "description": "One of the three evidence families kept apart on the audit page.",
+      "properties": {
+        "key": {
+          "enum": [
+            "wind",
+            "observation",
+            "concerns"
+          ],
+          "title": "Key",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "n": {
+          "title": "N",
+          "type": "integer"
+        },
+        "rank_histogram": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rank Histogram"
+        },
+        "rank_histograms": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rank Histograms"
+        },
+        "reliability": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/ReliabilityBin"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reliability"
+        },
+        "rows": {
+          "items": {
+            "$ref": "#/$defs/AuditMetric"
+          },
+          "title": "Rows",
+          "type": "array"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "title",
+        "label",
+        "summary",
+        "n",
+        "rows"
+      ],
+      "title": "Evaluation",
+      "type": "object"
+    },
+    "ForecastAudit": {
+      "description": "Forward audit tables, with an explicit insufficient-data state at every metric.",
+      "properties": {
+        "attempts": {
+          "$ref": "#/$defs/AttemptEvaluation"
+        },
+        "evaluations": {
+          "items": {
+            "$ref": "#/$defs/Evaluation"
+          },
+          "title": "Evaluations",
+          "type": "array"
+        },
+        "lowest_hour": {
+          "$ref": "#/$defs/LowestHourEvaluation"
+        },
+        "lowest_hour_verified": {
+          "title": "Lowest Hour Verified",
+          "type": "boolean"
+        },
+        "n_launches": {
+          "title": "N Launches",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "n_launches",
+        "evaluations",
+        "attempts",
+        "lowest_hour",
+        "lowest_hour_verified"
+      ],
+      "title": "ForecastAudit",
+      "type": "object"
+    },
+    "LowestHourEvaluation": {
+      "description": "Paired observed precipitation at the marked hour and at T-0.",
+      "properties": {
+        "difference": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Difference"
+        },
+        "interval": {
+          "anyOf": [
+            {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Interval"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "n": {
+          "title": "N",
+          "type": "integer"
+        },
+        "precipitation_at_lowest": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Precipitation At Lowest"
+        },
+        "precipitation_at_t0": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Precipitation At T0"
+        },
+        "risk_at_lowest": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Risk At Lowest"
+        },
+        "risk_at_t0": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Risk At T0"
+        },
+        "verified": {
+          "title": "Verified",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "label",
+        "n",
+        "risk_at_lowest",
+        "risk_at_t0",
+        "precipitation_at_lowest",
+        "precipitation_at_t0",
+        "difference",
+        "interval",
+        "verified"
+      ],
+      "title": "LowestHourEvaluation",
+      "type": "object"
+    },
+    "Outcome": {
+      "enum": [
+        "launched",
+        "launched_later",
+        "new_t0_pending",
+        "hold",
+        "unknown"
+      ],
+      "type": "string"
+    },
+    "ReliabilityBin": {
+      "description": "Predicted risk and observed event frequency in one fixed-width bin.",
+      "properties": {
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "n": {
+          "title": "N",
+          "type": "integer"
+        },
+        "observed": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Observed"
+        },
+        "predicted": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Predicted"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "upper",
+        "n",
+        "predicted",
+        "observed"
+      ],
+      "title": "ReliabilityBin",
+      "type": "object"
+    }
+  },
+  "description": "Published forward-audit summaries and the lowest-hour verification state.",
+  "properties": {
+    "forecast_audit": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ForecastAudit"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "lowest_hour_verified": {
+      "default": false,
+      "title": "Lowest Hour Verified",
+      "type": "boolean"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "summary": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Summary",
+      "type": "array"
+    }
+  },
+  "required": [
+    "generated_at"
+  ],
+  "title": "Hindcast",
+  "type": "object"
+}

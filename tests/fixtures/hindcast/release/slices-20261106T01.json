@@ -1,0 +1,169 @@
+{
+  "run_at": "2026-11-06T01:30:00Z",
+  "rule_set_version": "2023-09-12+scrubcast.1",
+  "launches": [
+    {
+      "launch": {
+        "id": "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae",
+        "name": "Falcon 9 Block 5 | USSF-432",
+        "slug": "falcon-9-block-5-ussf-432",
+        "status": "Go",
+        "net": "2026-11-07T00:46:00Z",
+        "net_precision": "MIN",
+        "window_start": "2026-11-07T00:46:00Z",
+        "window_end": "2026-11-07T04:46:00Z",
+        "probability": null,
+        "weather_concerns": null,
+        "launch_service_provider_name": "SpaceX",
+        "rocket_name": "Falcon 9",
+        "pad": {
+          "id": 16,
+          "name": "Space Launch Complex 4E",
+          "latitude": 34.632,
+          "longitude": -120.611,
+          "location": {
+            "id": 11,
+            "name": "Vandenberg SFB, CA, USA",
+            "timezone_name": "America/Los_Angeles"
+          }
+        },
+        "mission": {
+          "orbit": {
+            "abbrev": "LEO"
+          }
+        },
+        "last_updated": "2026-11-04T00:46:25Z",
+        "tier": "A",
+        "official_go_pct": null,
+        "official_concerns": [],
+        "unmapped_concerns": []
+      },
+      "point_id": "vandenberg",
+      "models": {
+        "ecmwf": {
+          "array_key": "launch_0_ecmwf",
+          "fetched_at": "2026-11-06T01:30:00Z",
+          "grid_point": {
+            "latitude": 34.75,
+            "longitude": -120.5,
+            "elevation": 144.0
+          },
+          "hours": [
+            "2026-11-07T00:00:00Z",
+            "2026-11-07T01:00:00Z",
+            "2026-11-07T02:00:00Z",
+            "2026-11-07T03:00:00Z",
+            "2026-11-07T04:00:00Z",
+            "2026-11-07T05:00:00Z"
+          ],
+          "variable_order": [
+            "cape",
+            "cloud_cover_1000hPa",
+            "cloud_cover_200hPa",
+            "cloud_cover_250hPa",
+            "cloud_cover_300hPa",
+            "cloud_cover_400hPa",
+            "cloud_cover_500hPa",
+            "cloud_cover_600hPa",
+            "cloud_cover_700hPa",
+            "cloud_cover_850hPa",
+            "cloud_cover_925hPa",
+            "cloud_cover_high",
+            "geopotential_height_1000hPa",
+            "geopotential_height_200hPa",
+            "geopotential_height_250hPa",
+            "geopotential_height_300hPa",
+            "geopotential_height_400hPa",
+            "geopotential_height_500hPa",
+            "geopotential_height_600hPa",
+            "geopotential_height_700hPa",
+            "geopotential_height_850hPa",
+            "geopotential_height_925hPa",
+            "precipitation",
+            "temperature_1000hPa",
+            "temperature_200hPa",
+            "temperature_250hPa",
+            "temperature_300hPa",
+            "temperature_400hPa",
+            "temperature_500hPa",
+            "temperature_600hPa",
+            "temperature_700hPa",
+            "temperature_850hPa",
+            "temperature_925hPa",
+            "wind_direction_250hPa",
+            "wind_direction_500hPa",
+            "wind_gusts_10m",
+            "wind_speed_100m",
+            "wind_speed_10m",
+            "wind_speed_200hPa",
+            "wind_speed_250hPa",
+            "wind_speed_300hPa",
+            "wind_speed_500hPa"
+          ],
+          "members": 51
+        },
+        "gfs": {
+          "array_key": "launch_0_gfs",
+          "fetched_at": "2026-11-06T01:30:00Z",
+          "grid_point": {
+            "latitude": 34.75,
+            "longitude": -120.5,
+            "elevation": 144.0
+          },
+          "hours": [
+            "2026-11-07T00:00:00Z",
+            "2026-11-07T01:00:00Z",
+            "2026-11-07T02:00:00Z",
+            "2026-11-07T03:00:00Z",
+            "2026-11-07T04:00:00Z",
+            "2026-11-07T05:00:00Z"
+          ],
+          "variable_order": [
+            "cape",
+            "cloud_cover_1000hPa",
+            "cloud_cover_200hPa",
+            "cloud_cover_250hPa",
+            "cloud_cover_300hPa",
+            "cloud_cover_400hPa",
+            "cloud_cover_500hPa",
+            "cloud_cover_600hPa",
+            "cloud_cover_700hPa",
+            "cloud_cover_850hPa",
+            "cloud_cover_925hPa",
+            "geopotential_height_1000hPa",
+            "geopotential_height_200hPa",
+            "geopotential_height_250hPa",
+            "geopotential_height_300hPa",
+            "geopotential_height_400hPa",
+            "geopotential_height_500hPa",
+            "geopotential_height_600hPa",
+            "geopotential_height_700hPa",
+            "geopotential_height_850hPa",
+            "geopotential_height_925hPa",
+            "precipitation",
+            "temperature_1000hPa",
+            "temperature_200hPa",
+            "temperature_250hPa",
+            "temperature_300hPa",
+            "temperature_400hPa",
+            "temperature_500hPa",
+            "temperature_600hPa",
+            "temperature_700hPa",
+            "temperature_850hPa",
+            "temperature_925hPa",
+            "wind_direction_250hPa",
+            "wind_direction_500hPa",
+            "wind_gusts_10m",
+            "wind_speed_100m",
+            "wind_speed_10m",
+            "wind_speed_200hPa",
+            "wind_speed_250hPa",
+            "wind_speed_300hPa",
+            "wind_speed_500hPa"
+          ],
+          "members": 31
+        }
+      }
+    }
+  ]
+}

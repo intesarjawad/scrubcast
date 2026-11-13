@@ -1,0 +1,13 @@
+{
+  "site_id": "generic",
+  "location_ids": [],
+  "tier": "C",
+  "forecast_point": null,
+  "metar_station": null,
+  "rule_sets": [
+    "llcc-nasa-std-4010a"
+  ],
+  "reference_only": true,
+  "confidence": "low",
+  "coordinate_overrides": {}
+}

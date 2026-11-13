@@ -1,0 +1,13 @@
+title = "Repository secret scanning"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Open-Meteo ensemble variable names and recorded array keys look like API keys but are not credentials"
+targetRules = ["generic-api-key"]
+regexTarget = "match"
+regexes = [
+  '''wind_speed_10m_ecmwf_ifs025_ensemble''',
+  '''array_key": "launch_\d+_ecmwf"''',
+]

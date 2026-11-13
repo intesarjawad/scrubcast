@@ -1,0 +1,19 @@
+{
+  "site_id": "starbase",
+  "location_ids": [
+    143
+  ],
+  "tier": "B",
+  "forecast_point": {
+    "point_id": "starbase",
+    "latitude": 25.99677,
+    "longitude": -97.15799
+  },
+  "metar_station": "KBRO",
+  "rule_sets": [
+    "llcc-nasa-std-4010a"
+  ],
+  "reference_only": true,
+  "confidence": null,
+  "coordinate_overrides": {}
+}

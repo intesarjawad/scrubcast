@@ -1,0 +1,117 @@
+{
+  "ledger": [
+    {
+      "launch_id": "test-launch",
+      "run_at": "2026-11-04T08:00:00Z",
+      "fetched_at": {
+        "ecmwf": "2026-11-04T08:00:00Z",
+        "gfs": null
+      },
+      "net": "2026-11-05T08:00:00Z",
+      "tier": "A",
+      "rule_set_version": "1.0.0",
+      "rules": {
+        "cumulus": [
+          0.4,
+          null
+        ]
+      },
+      "union": [
+        0.4,
+        null
+      ],
+      "lowest_hour": null,
+      "lowest_hour_union": null,
+      "window_end": "2026-11-05T10:00:00Z",
+      "official_go_pct": 90,
+      "official_concerns": [
+        "Cumulus Cloud Rule"
+      ],
+      "unmapped_concerns": []
+    },
+    {
+      "launch_id": "test-launch",
+      "run_at": "2026-11-05T08:00:00Z",
+      "fetched_at": {
+        "ecmwf": "2026-11-05T08:00:00Z",
+        "gfs": null
+      },
+      "net": "2026-11-06T08:00:00Z",
+      "tier": "A",
+      "rule_set_version": "1.0.0",
+      "rules": {
+        "cumulus": [
+          0.4,
+          null
+        ]
+      },
+      "union": [
+        0.4,
+        null
+      ],
+      "lowest_hour": null,
+      "lowest_hour_union": null,
+      "window_end": "2026-11-06T10:00:00Z",
+      "official_go_pct": 90,
+      "official_concerns": [
+        "Cumulus Cloud Rule"
+      ],
+      "unmapped_concerns": []
+    }
+  ],
+  "launches": [
+    {
+      "id": "test-launch",
+      "name": "Test mission",
+      "slug": "test-mission",
+      "status": "Success",
+      "net": "2026-11-06T08:00:00Z",
+      "net_precision": "SEC",
+      "window_start": "2026-11-06T08:00:00Z",
+      "window_end": "2026-11-06T10:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2025-11-01T00:17:41Z",
+      "updates": [
+        {
+          "created_on": "2026-11-05T09:00:00Z",
+          "comment": "Launch delayed."
+        }
+      ]
+    }
+  ],
+  "now": "2026-11-06T18:00:00Z",
+  "expected": [
+    {
+      "outcome": "launched_later",
+      "net_now": "2026-11-06T08:00:00Z",
+      "note": {
+        "created_on": "2026-11-05T09:00:00Z",
+        "text": "Launch delayed."
+      }
+    },
+    {
+      "outcome": "launched",
+      "net_now": "2026-11-06T08:00:00Z",
+      "note": null
+    }
+  ]
+}

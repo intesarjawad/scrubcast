@@ -1,0 +1,20 @@
+{
+  "vehicle_id": "falcon-heavy",
+  "rocket_names": [
+    "Falcon Heavy"
+  ],
+  "rule_id": "liftoff_wind",
+  "threshold_mps": 13.41,
+  "reference_height_m": 49.4,
+  "measure": "sustained",
+  "comparator": ">",
+  "source_url": "https://www.nasa.gov/kennedy/about-kennedy/fact-sheets/",
+  "source_note": "NASA fact sheet FS-2020-05-568-KSC: published for crewed Falcon 9; applied to all Falcon 9 and Falcon Heavy as the only public figure.",
+  "plot": {
+    "variable": "wind_at_reference_height",
+    "unit": "m/s",
+    "threshold_param": "threshold_mps",
+    "comparator_param": "comparator",
+    "readout_phrase": "exceed {threshold_mps} m/s ({reference_height_m} m above the pad)"
+  }
+}

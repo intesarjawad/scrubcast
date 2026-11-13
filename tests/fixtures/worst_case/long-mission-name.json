@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-06T10:00:00Z",
+  "schedule_stale": false,
+  "members_total": 5,
+  "launches": [
+    {
+      "id": "long-name",
+      "name": "Falcon 9 Block 5 | Communications and Earth observation rideshare Communications and Earth observation rideshare Communi",
+      "slug": "long-name",
+      "status": "Go",
+      "net": "2026-11-06T18:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-06T18:00:00Z",
+      "window_end": "2026-11-06T22:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-04T18:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/long-name/"
+    }
+  ]
+}

@@ -1,0 +1,1327 @@
+{
+  "members": 51,
+  "union_violating_members": 15,
+  "union_risk_fraction": 0.29411764705882354,
+  "rules": {
+    "thick_cloud": {
+      "risk_fraction": 0.29411764705882354,
+      "evaluable_members": 51,
+      "violating_members": 15,
+      "member_results": [
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 3313.6904296875
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 4766.900390625
+        },
+        {
+          "verdict": "violated",
+          "value": 4761.96044921875
+        },
+        {
+          "verdict": "violated",
+          "value": 2073.8603515625
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 4760.8603515625
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 4763.1904296875
+        },
+        {
+          "verdict": "violated",
+          "value": 2073.2001953125
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 4770.3095703125
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 3311.01025390625
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 2075.9404296875
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 2077.18017578125
+        },
+        {
+          "verdict": "violated",
+          "value": 2079.27001953125
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 4762.10009765625
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 3314.1396484375
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 3315.58984375
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        }
+      ]
+    },
+    "cumulus": {
+      "risk_fraction": 0.0196078431372549,
+      "evaluable_members": 51,
+      "violating_members": 1,
+      "member_results": [
+        {
+          "verdict": "clear",
+          "value": 760.0
+        },
+        {
+          "verdict": "clear",
+          "value": 430.0
+        },
+        {
+          "verdict": "clear",
+          "value": 840.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1150.0
+        },
+        {
+          "verdict": "clear",
+          "value": 940.0
+        },
+        {
+          "verdict": "clear",
+          "value": 980.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 290.0
+        },
+        {
+          "verdict": "clear",
+          "value": 650.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 540.0
+        },
+        {
+          "verdict": "clear",
+          "value": 940.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1030.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 770.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 880.0
+        },
+        {
+          "verdict": "clear",
+          "value": 630.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1100.0
+        },
+        {
+          "verdict": "clear",
+          "value": 780.0
+        },
+        {
+          "verdict": "clear",
+          "value": 550.0
+        },
+        {
+          "verdict": "clear",
+          "value": 700.0
+        },
+        {
+          "verdict": "clear",
+          "value": 490.0
+        },
+        {
+          "verdict": "clear",
+          "value": 980.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1300.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1060.0
+        },
+        {
+          "verdict": "clear",
+          "value": 490.0
+        },
+        {
+          "verdict": "clear",
+          "value": 540.0
+        },
+        {
+          "verdict": "clear",
+          "value": 220.0
+        },
+        {
+          "verdict": "clear",
+          "value": 340.0
+        },
+        {
+          "verdict": "clear",
+          "value": 630.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1220.0
+        },
+        {
+          "verdict": "clear",
+          "value": 390.0
+        },
+        {
+          "verdict": "clear",
+          "value": 710.0
+        },
+        {
+          "verdict": "clear",
+          "value": 20.0
+        },
+        {
+          "verdict": "clear",
+          "value": 580.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 380.0
+        },
+        {
+          "verdict": "clear",
+          "value": 950.0
+        },
+        {
+          "verdict": "clear",
+          "value": 460.0
+        },
+        {
+          "verdict": "clear",
+          "value": 900.0
+        },
+        {
+          "verdict": "clear",
+          "value": 580.0
+        },
+        {
+          "verdict": "violated",
+          "value": 1060.0
+        },
+        {
+          "verdict": "clear",
+          "value": 670.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 660.0
+        },
+        {
+          "verdict": "clear",
+          "value": 550.0
+        },
+        {
+          "verdict": "clear",
+          "value": 990.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1160.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1260.0
+        },
+        {
+          "verdict": "clear",
+          "value": 590.0
+        }
+      ]
+    },
+    "anvil": {
+      "risk_fraction": 0.0,
+      "evaluable_members": 51,
+      "violating_members": 0,
+      "member_results": [
+        {
+          "verdict": "clear",
+          "value": 760.0
+        },
+        {
+          "verdict": "clear",
+          "value": 430.0
+        },
+        {
+          "verdict": "clear",
+          "value": 840.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1150.0
+        },
+        {
+          "verdict": "clear",
+          "value": 940.0
+        },
+        {
+          "verdict": "clear",
+          "value": 980.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 290.0
+        },
+        {
+          "verdict": "clear",
+          "value": 650.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 540.0
+        },
+        {
+          "verdict": "clear",
+          "value": 940.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1030.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 770.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 880.0
+        },
+        {
+          "verdict": "clear",
+          "value": 630.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1100.0
+        },
+        {
+          "verdict": "clear",
+          "value": 780.0
+        },
+        {
+          "verdict": "clear",
+          "value": 550.0
+        },
+        {
+          "verdict": "clear",
+          "value": 700.0
+        },
+        {
+          "verdict": "clear",
+          "value": 490.0
+        },
+        {
+          "verdict": "clear",
+          "value": 980.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1300.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1060.0
+        },
+        {
+          "verdict": "clear",
+          "value": 490.0
+        },
+        {
+          "verdict": "clear",
+          "value": 540.0
+        },
+        {
+          "verdict": "clear",
+          "value": 220.0
+        },
+        {
+          "verdict": "clear",
+          "value": 340.0
+        },
+        {
+          "verdict": "clear",
+          "value": 630.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1220.0
+        },
+        {
+          "verdict": "clear",
+          "value": 390.0
+        },
+        {
+          "verdict": "clear",
+          "value": 710.0
+        },
+        {
+          "verdict": "clear",
+          "value": 20.0
+        },
+        {
+          "verdict": "clear",
+          "value": 580.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 380.0
+        },
+        {
+          "verdict": "clear",
+          "value": 950.0
+        },
+        {
+          "verdict": "clear",
+          "value": 460.0
+        },
+        {
+          "verdict": "clear",
+          "value": 900.0
+        },
+        {
+          "verdict": "clear",
+          "value": 580.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1060.0
+        },
+        {
+          "verdict": "clear",
+          "value": 670.0
+        },
+        {
+          "verdict": "clear",
+          "value": 860.0
+        },
+        {
+          "verdict": "clear",
+          "value": 660.0
+        },
+        {
+          "verdict": "clear",
+          "value": 550.0
+        },
+        {
+          "verdict": "clear",
+          "value": 990.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1160.0
+        },
+        {
+          "verdict": "clear",
+          "value": 1260.0
+        },
+        {
+          "verdict": "clear",
+          "value": 590.0
+        }
+      ]
+    },
+    "disturbed_weather": {
+      "risk_fraction": 0.0,
+      "evaluable_members": 51,
+      "violating_members": 0,
+      "member_results": [
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.30000001192092896
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        }
+      ]
+    },
+    "flight_through_precip": {
+      "risk_fraction": 0.0196078431372549,
+      "evaluable_members": 51,
+      "violating_members": 1,
+      "member_results": [
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "violated",
+          "value": 0.30000001192092896
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        },
+        {
+          "verdict": "clear",
+          "value": 0.0
+        }
+      ]
+    },
+    "liftoff_wind": {
+      "risk_fraction": 0.0,
+      "evaluable_members": 51,
+      "violating_members": 0,
+      "member_results": [
+        {
+          "verdict": "clear",
+          "value": 3.8079002340196966
+        },
+        {
+          "verdict": "clear",
+          "value": 3.9026414208215967
+        },
+        {
+          "verdict": "clear",
+          "value": 4.006962007820614
+        },
+        {
+          "verdict": "clear",
+          "value": 4.123572871142505
+        },
+        {
+          "verdict": "clear",
+          "value": 2.514742585369357
+        },
+        {
+          "verdict": "clear",
+          "value": 3.96898701956602
+        },
+        {
+          "verdict": "clear",
+          "value": 1.7213050488713846
+        },
+        {
+          "verdict": "clear",
+          "value": 3.079284823486242
+        },
+        {
+          "verdict": "clear",
+          "value": 2.579488897369817
+        },
+        {
+          "verdict": "clear",
+          "value": 4.086822956001705
+        },
+        {
+          "verdict": "clear",
+          "value": 4.276101278161577
+        },
+        {
+          "verdict": "clear",
+          "value": 3.7625124224444066
+        },
+        {
+          "verdict": "clear",
+          "value": 2.4815292293800004
+        },
+        {
+          "verdict": "clear",
+          "value": 3.298631496056807
+        },
+        {
+          "verdict": "clear",
+          "value": 3.6196648594448155
+        },
+        {
+          "verdict": "clear",
+          "value": 4.691373529534012
+        },
+        {
+          "verdict": "clear",
+          "value": 2.391710102182112
+        },
+        {
+          "verdict": "clear",
+          "value": 3.4715844310200956
+        },
+        {
+          "verdict": "clear",
+          "value": 3.996207025863498
+        },
+        {
+          "verdict": "clear",
+          "value": 3.948420295239834
+        },
+        {
+          "verdict": "clear",
+          "value": 3.1766590465990294
+        },
+        {
+          "verdict": "clear",
+          "value": 4.293330171185131
+        },
+        {
+          "verdict": "clear",
+          "value": 2.6135030967331656
+        },
+        {
+          "verdict": "clear",
+          "value": 4.458661865501219
+        },
+        {
+          "verdict": "clear",
+          "value": 2.9919801414467546
+        },
+        {
+          "verdict": "clear",
+          "value": 2.6995656901170793
+        },
+        {
+          "verdict": "clear",
+          "value": 1.2529251393416483
+        },
+        {
+          "verdict": "clear",
+          "value": 3.806741741443766
+        },
+        {
+          "verdict": "clear",
+          "value": 4.036945778845589
+        },
+        {
+          "verdict": "clear",
+          "value": 1.811973193992078
+        },
+        {
+          "verdict": "clear",
+          "value": 1.6002800390936993
+        },
+        {
+          "verdict": "clear",
+          "value": 4.298009566281014
+        },
+        {
+          "verdict": "clear",
+          "value": 3.438149836547194
+        },
+        {
+          "verdict": "clear",
+          "value": 2.962458652182039
+        },
+        {
+          "verdict": "clear",
+          "value": 4.059645782426611
+        },
+        {
+          "verdict": "clear",
+          "value": 3.568178990461479
+        },
+        {
+          "verdict": "clear",
+          "value": 3.963532976256596
+        },
+        {
+          "verdict": "clear",
+          "value": 3.7956592037054695
+        },
+        {
+          "verdict": "clear",
+          "value": 4.077382001669489
+        },
+        {
+          "verdict": "clear",
+          "value": 3.915325147903848
+        },
+        {
+          "verdict": "clear",
+          "value": 3.2274036427413155
+        },
+        {
+          "verdict": "clear",
+          "value": 2.281913933460566
+        },
+        {
+          "verdict": "clear",
+          "value": 2.441114316736643
+        },
+        {
+          "verdict": "clear",
+          "value": 3.864399927952734
+        },
+        {
+          "verdict": "clear",
+          "value": 3.5683634324302136
+        },
+        {
+          "verdict": "clear",
+          "value": 2.2573075499066637
+        },
+        {
+          "verdict": "clear",
+          "value": 3.9036788475305033
+        },
+        {
+          "verdict": "clear",
+          "value": 3.6555279088081853
+        },
+        {
+          "verdict": "clear",
+          "value": 3.996207025863498
+        },
+        {
+          "verdict": "clear",
+          "value": 2.881225675701565
+        },
+        {
+          "verdict": "clear",
+          "value": 3.105287539442109
+        }
+      ]
+    }
+  },
+  "not_evaluable": [
+    {
+      "rule_id": "lightning",
+      "title": "Lightning",
+      "llccr": [
+        5,
+        6
+      ],
+      "reason": "Needs observed lightning distance and timing; the ensemble has no lightning field."
+    },
+    {
+      "rule_id": "surface_electric_fields",
+      "title": "Surface Electric Fields",
+      "llccr": [
+        7,
+        8
+      ],
+      "reason": "Field-mill readings are not public in real time."
+    },
+    {
+      "rule_id": "debris_cloud",
+      "title": "Debris Clouds",
+      "llccr": [
+        18,
+        19,
+        20
+      ],
+      "reason": "Needs radar and cloud history."
+    },
+    {
+      "rule_id": "smoke_plume",
+      "title": "Smoke Plumes",
+      "llccr": [
+        25,
+        26
+      ],
+      "reason": "Not observable from model output."
+    },
+    {
+      "rule_id": "triboelectrification",
+      "title": "Triboelectrification",
+      "llccr": [
+        27,
+        28
+      ],
+      "reason": "Vehicle-specific exemption status unknown."
+    },
+    {
+      "rule_id": "booster_recovery",
+      "title": "Booster recovery and downrange weather",
+      "llccr": [],
+      "reason": "Recovery zone and downrange limits are mission-specific and not public."
+    }
+  ]
+}

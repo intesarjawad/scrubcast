@@ -1,0 +1,20 @@
+{
+  "Cumulus Cloud Rule": "cumulus",
+  "Anvil Cloud Rules": "anvil",
+  "Anvil Rule": "anvil",
+  "Anvil Rules": "anvil",
+  "Surface Electric Fields Rule": "surface_electric_fields",
+  "Surface Electric Field Rule": "surface_electric_fields",
+  "Lightning Rule": "lightning",
+  "Liftoff Winds": "liftoff_wind",
+  "Ground Winds": "liftoff_wind",
+  "Flight Through Precipitation": "flight_through_precip",
+  "Ascent Corridor Recovery": "booster_recovery",
+  "Thick Cloud Layers Rule": "thick_cloud",
+  "Thick Cloud Rule": "thick_cloud",
+  "Disturbed Weather Rule": "disturbed_weather",
+  "Debris Cloud Rule": "debris_cloud",
+  "Debris Clouds Rule": "debris_cloud",
+  "Smoke Plume Rule": "smoke_plume",
+  "Triboelectrification Rule": "triboelectrification"
+}

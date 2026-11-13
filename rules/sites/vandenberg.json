@@ -1,0 +1,19 @@
+{
+  "site_id": "vandenberg",
+  "location_ids": [
+    11
+  ],
+  "tier": "A",
+  "forecast_point": {
+    "point_id": "vandenberg",
+    "latitude": 34.632,
+    "longitude": -120.611
+  },
+  "metar_station": "KVBG",
+  "rule_sets": [
+    "llcc-nasa-std-4010a"
+  ],
+  "reference_only": false,
+  "confidence": null,
+  "coordinate_overrides": {}
+}

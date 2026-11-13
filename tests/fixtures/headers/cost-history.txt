@@ -1,0 +1,10 @@
+Date: Thu, 05 Nov 2026 09:27:50 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+X-RateLimit-Cost: 34.24286
+X-RateLimit-Limit: 600.0
+X-RateLimit-Remaining: 525.8571
+X-RateLimit-Reset: 1793870911
+X-RateLimit-Window: 60
+

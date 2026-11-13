@@ -1,0 +1,45 @@
+{
+  "ledger": [
+    {
+      "launch_id": "8c2412ae-fbef-443f-aae8-db538f38eec6",
+      "run_at": "2025-10-18T01:00:00Z",
+      "fetched_at": {
+        "ecmwf": "2025-10-18T01:00:00Z",
+        "gfs": null
+      },
+      "net": "2025-10-19T01:00:00Z",
+      "tier": "A",
+      "rule_set_version": "1.0.0",
+      "rules": {
+        "cumulus": [
+          0.4,
+          null
+        ]
+      },
+      "union": [
+        0.4,
+        null
+      ],
+      "lowest_hour": null,
+      "lowest_hour_union": null,
+      "window_end": "2025-10-19T01:00:00Z",
+      "official_go_pct": 90,
+      "official_concerns": [
+        "Cumulus Cloud Rule"
+      ],
+      "unmapped_concerns": []
+    }
+  ],
+  "launches": [],
+  "now": "2025-10-26T01:00:00Z",
+  "expected": [
+    {
+      "outcome": "launched_later",
+      "net_now": "2025-10-26T00:00:15Z",
+      "note": {
+        "created_on": "2025-10-19T05:06:00Z",
+        "text": "Launch delayed due to launch site weather, new date TBD."
+      }
+    }
+  ]
+}

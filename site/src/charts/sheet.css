@@ -1,0 +1,290 @@
+.launch-page main.frame {
+  max-width: none;
+  padding: var(--s0);
+}
+.launch-page main > :not(.spread),
+.spread-grid {
+  max-width: var(--frame-width);
+  margin-inline: auto;
+  padding-inline: var(--s4);
+}
+.spread {
+  position: relative;
+  border-bottom: var(--hair) solid var(--ink);
+}
+.spread-grid {
+  display: grid;
+  grid-template-columns: minmax(var(--s0), 1fr) var(--notes-width);
+  gap: var(--s11);
+  padding-block: var(--s7);
+}
+.sheet-canvas {
+  position: absolute;
+  inset: var(--s0);
+  width: var(--full);
+  height: var(--full);
+  pointer-events: none;
+}
+.sheet-notes {
+  grid-row: span 2;
+}
+.unseen {
+  position: relative;
+  grid-column: 1;
+}
+.unseen ul {
+  columns: 2;
+  column-gap: var(--s7);
+}
+.sheet,
+.sheet-notes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: var(--s0);
+}
+.sheet-page {
+  overflow-wrap: anywhere;
+  font: var(--weight-medium) var(--text-sheet) / var(--leading-sheet) var(--display);
+}
+.sheet-page .slot {
+  font-weight: var(--weight-bold);
+}
+.sheet-page p {
+  max-width: none;
+  white-space: pre-line;
+  margin-bottom: var(--s5);
+}
+.sheet-page .page-who {
+  font-size: var(--text-lg);
+}
+.sheet-page .page-status {
+  font-size: var(--text-sheet-small);
+  white-space: pre-wrap;
+}
+.spread[data-printed="true"] .sheet-page {
+  color: transparent;
+}
+.spread[data-phase="press"] :is(.fan, .unseen) {
+  opacity: 0;
+}
+.sheet-page[data-state="pending"] {
+  visibility: hidden;
+}
+.keep {
+  white-space: normal;
+}
+.slot-cluster {
+  display: inline-block;
+  white-space: pre;
+}
+.slot-group {
+  display: inline-block;
+}
+.slot {
+  display: inline;
+  white-space: normal;
+  padding: var(--s0);
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.figure {
+  cursor: crosshair;
+}
+.figure[data-active] {
+  box-shadow: inset var(--s0) calc(-1 * var(--hair)) var(--ink);
+}
+/* Red means a broken rule on this sheet, so a focused figure is underlined in ink instead. */
+.figure:focus-visible {
+  outline: none;
+  box-shadow: inset var(--s0) calc(-1 * var(--stroke)) var(--ink);
+}
+@media (forced-colors: active) {
+  .figure:focus-visible {
+    outline: var(--stroke) solid Highlight;
+  }
+}
+.fan {
+  margin: var(--s0);
+  padding-top: var(--s5);
+}
+.fan,
+.unseen {
+  transition: opacity var(--member-transition);
+}
+.fan-plot {
+  position: relative;
+  height: var(--fan-height);
+  border-bottom: var(--hair) solid var(--ink);
+}
+.fan-limit {
+  position: absolute;
+  /* The label stands above the band so the column counts keep the top row to themselves. */
+  inset-block: calc(-1 * var(--s5)) var(--s0);
+  padding-inline: var(--s1);
+  border-left: var(--hair) dashed var(--accent);
+  color: var(--accent);
+}
+.fan-limit.flip {
+  border-left: none;
+  border-right: var(--hair) dashed var(--accent);
+}
+.fan-tick {
+  position: absolute;
+  top: var(--full);
+  padding-top: var(--s1);
+  translate: -50%;
+}
+.fan-caption {
+  padding-top: var(--s6);
+  text-align: right;
+}
+.unseen {
+  margin-top: var(--s6);
+}
+.unseen ul {
+  padding: var(--s0);
+  margin: var(--s0);
+  list-style: none;
+}
+.unseen li {
+  break-inside: avoid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s0) var(--s2);
+  padding-top: var(--s2);
+}
+.unseen li::after {
+  content: "";
+  flex: 1;
+  min-width: var(--s4);
+  margin-bottom: var(--s1);
+  border-bottom: var(--hair) solid var(--line);
+}
+.unseen small {
+  order: 1;
+  flex-basis: var(--full);
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+.unseen p {
+  margin-block: var(--s2) var(--s1);
+  color: var(--muted);
+}
+.unseen h2,
+.spread .intro h1,
+.pages-control label {
+  font: var(--weight-medium) var(--text-sm) / var(--leading-tight) var(--sans);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+.unseen h2,
+.schedule,
+.sheet-facts dt {
+  color: var(--muted);
+}
+.spread .intro h1 {
+  overflow-wrap: anywhere;
+}
+.spread .intro {
+  padding: var(--s0);
+}
+.sheet-title {
+  font: var(--text-sheet-title) / var(--leading-display) var(--display);
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+  margin-block: var(--s6) var(--s5);
+}
+.sheet-legend {
+  font-size: var(--text-md);
+}
+.pages-control,
+.sheet-facts {
+  margin-top: var(--s7);
+  padding-top: var(--s3);
+  border-top: var(--hair) solid var(--ink);
+}
+.pages-control label {
+  display: flex;
+  justify-content: space-between;
+}
+.pages-control input {
+  width: var(--full);
+  min-height: var(--control);
+  accent-color: var(--ink);
+  margin: var(--s0);
+}
+.sheet-facts {
+  display: grid;
+  grid-template-columns: auto minmax(var(--s0), 1fr);
+  gap: var(--s2) var(--s4);
+}
+.sheet-facts dd {
+  margin: var(--s0);
+}
+.fan-caption,
+.unseen :is(li, p),
+.sheet-facts,
+.schedule {
+  font: var(--text-sm) / var(--leading-tight) var(--sans);
+}
+.fan-plot {
+  font: var(--weight-medium) var(--text-sm) var(--display);
+}
+@media (forced-colors: active) {
+  .sheet-canvas {
+    display: none;
+  }
+  .spread[data-phase] :is(.fan, .unseen) {
+    opacity: 1;
+    transition: none;
+  }
+}
+.narrow .spread-grid {
+  grid-template-columns: minmax(var(--s0), 1fr);
+  gap: var(--s0);
+  padding-block: var(--s5) var(--s7);
+}
+.narrow .sheet-notes {
+  display: contents;
+}
+.narrow .sheet-notes > * {
+  position: relative;
+}
+.narrow .sheet-facts {
+  order: 5;
+  margin-block: var(--s6) var(--s0);
+}
+.narrow .sheet-title {
+  order: 3;
+  margin-block: var(--s4) var(--s3);
+}
+.narrow .sheet {
+  order: 4;
+}
+.narrow .sheet-page {
+  font-size: var(--text-sheet-narrow);
+  font-weight: var(--weight-semibold);
+}
+.narrow .page-status {
+  font-size: var(--text-md);
+}
+.narrow .sheet-legend {
+  order: 3;
+  margin-bottom: var(--s6);
+}
+.narrow .unseen {
+  order: 6;
+}
+.narrow .unseen ul {
+  columns: auto;
+}
+.narrow .pages-control {
+  order: 7;
+}

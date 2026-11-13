@@ -1,0 +1,44 @@
+.launch-list {
+  list-style: none;
+  margin: var(--s8) var(--s0) var(--s0);
+  padding: var(--s0);
+}
+.launch-row {
+  padding-block: var(--s4);
+}
+.countdown {
+  flex: 0 0 calc(var(--s11) + var(--s7));
+  white-space: nowrap;
+}
+.mission {
+  flex: 1 var(--card-official-width);
+  overflow-wrap: anywhere;
+}
+
+.launch-row h2 {
+  font-size: var(--text-lg);
+  line-height: var(--leading-tight);
+}
+.lead-launch {
+  padding-block: var(--s6) var(--s7);
+}
+.launch-status {
+  margin-top: var(--s3);
+}
+.lead-launch :is(.countdown, .weather-finding) {
+  color: var(--ink);
+  font-weight: var(--weight-semibold);
+}
+.lead-forecast {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s2);
+  font-size: var(--text-sm);
+  margin-top: var(--s3);
+}
+.lead-probability {
+  font-family: var(--display);
+  font-size: var(--text-share);
+  line-height: var(--leading-title);
+}

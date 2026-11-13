@@ -1,0 +1,11 @@
+HTTP 200
+date: Fri, 06 Nov 2026 01:30:23 GMT
+content-type: application/json; charset=utf-8
+transfer-encoding: chunked
+connection: keep-alive
+x-ratelimit-cost: 344.4
+x-ratelimit-limit: 600.0
+x-ratelimit-remaining: 255.6
+x-ratelimit-reset: 1793928683
+x-ratelimit-window: 60
+content-encoding: deflate

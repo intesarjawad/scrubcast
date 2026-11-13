@@ -1,0 +1,85 @@
+name: collect
+
+on:
+  schedule:
+    - cron: "20 3,9,15,21 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ledger
+          path: ledger
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          enable-cache: true
+      - run: uv sync --locked --no-dev
+      - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        with:
+          path: data
+          key: scrub-data-${{ github.run_id }}
+          restore-keys: scrub-data-
+      - name: Check archive access
+        if: vars.ARCHIVE_REPO != ''
+        env:
+          GH_TOKEN: ${{ secrets.ARCHIVE_TOKEN }}
+          ARCHIVE_REPO: ${{ vars.ARCHIVE_REPO }}
+        run: |
+          gh api "repos/$ARCHIVE_REPO" --silent || {
+            echo "::error::ARCHIVE_TOKEN cannot read $ARCHIVE_REPO: renew it (docs/operations.md)"
+            exit 1
+          }
+      - name: Note missing archive configuration
+        if: vars.ARCHIVE_REPO == ''
+        run: |
+          echo "Slices not archived: set ARCHIVE_REPO and ARCHIVE_TOKEN to keep raw members, docs/operations.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Collect the schedule, weather and slices
+        run: uv run --locked scrubcast collect
+      - name: Upload slices to the archive release
+        if: vars.ARCHIVE_REPO != ''
+        env:
+          GH_TOKEN: ${{ secrets.ARCHIVE_TOKEN }}
+          ARCHIVE_REPO: ${{ vars.ARCHIVE_REPO }}
+        run: |
+          shopt -s nullglob
+          files=(archive/*.npz archive/*.json)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No slices to upload"
+            exit 0
+          fi
+          tag="archive-$(date -u +%Y-%m)"
+          gh release view "$tag" --repo "$ARCHIVE_REPO" >/dev/null 2>&1 ||
+            gh release create "$tag" --repo "$ARCHIVE_REPO" --title "$tag" --notes "Forecast slices for $tag"
+          gh release upload "$tag" "${files[@]}" --repo "$ARCHIVE_REPO" --clobber
+      - uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        with:
+          path: data
+          key: scrub-data-${{ github.run_id }}
+      - name: Commit the ledger
+        working-directory: ledger
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "ledger: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for attempt in 1 2 3; do
+            git pull --rebase --quiet origin ledger && git push --quiet origin HEAD:ledger && exit 0
+            [ -d "$(git rev-parse --git-path rebase-merge)" ] && git rebase --abort
+            sleep $((attempt * 10))
+          done
+          exit 1

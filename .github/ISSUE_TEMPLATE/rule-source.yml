@@ -1,0 +1,18 @@
+name: Rule source
+description: Propose a correction backed by a primary source.
+title: "Rule source: "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Primary source URL
+      description: Link the official document and identify its revision or date.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Identify the rule, page, units and affected launch sites or vehicles.
+    validations:
+      required: true

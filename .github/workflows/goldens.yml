@@ -1,0 +1,63 @@
+name: Visual goldens
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Git ref to render
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  goldens:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      UV_CACHE_DIR: ${{ github.workspace }}/.cache/uv
+      npm_config_cache: ${{ github.workspace }}/.cache/npm
+    steps:
+      - name: Check out the requested ref
+        env:
+          TARGET_REF: ${{ inputs.ref }}
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          git init .
+          git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git"
+          authentication=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c "http.extraheader=AUTHORIZATION: basic $authentication" fetch --depth=1 origin "$TARGET_REF"
+          git checkout --detach FETCH_HEAD
+      - name: Install pinned runtimes
+        shell: bash
+        run: |
+          node_archive=node-v26.13.0-linux-x64.tar.xz
+          runtime_dir="$RUNNER_TEMP/scrubcast-runtime"
+          mkdir -p "$runtime_dir"
+          cd "$runtime_dir"
+          curl --fail --silent --show-error --remote-name "https://nodejs.org/dist/v26.13.0/$node_archive"
+          curl --fail --silent --show-error --remote-name https://nodejs.org/dist/v26.13.0/SHASUMS256.txt
+          awk -v archive="$node_archive" '$2 == archive' SHASUMS256.txt | sha256sum --check --strict
+          tar -xf "$node_archive"
+          echo "$runtime_dir/node-v26.13.0-linux-x64/bin" >> "$GITHUB_PATH"
+          python3 -m venv "$runtime_dir/uv"
+          "$runtime_dir/uv/bin/pip" install uv==0.13.7
+          echo "$runtime_dir/uv/bin" >> "$GITHUB_PATH"
+      - name: Install locked dependencies
+        run: |
+          uv sync --locked
+          npm --prefix site ci
+      - name: Install Chromium
+        working-directory: site
+        run: npx playwright install --with-deps chromium
+      - name: Render Linux screenshots
+        working-directory: site
+        run: npx playwright test --project=chromium --update-snapshots
+      - name: Upload screenshots
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: launch-goldens
+          path: site/tests/e2e/__screenshots__
+          if-no-files-found: error

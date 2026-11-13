@@ -1,0 +1,1238 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-06T10:00:00Z",
+  "schedule_stale": false,
+  "members_total": 5,
+  "launches": [
+    {
+      "id": "mission-0",
+      "name": "Falcon 9 Block 5 | Mission 0",
+      "slug": "mission-0",
+      "status": "Go",
+      "net": "2026-11-06T11:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-06T11:00:00Z",
+      "window_end": "2026-11-06T15:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-04T11:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-0/"
+    },
+    {
+      "id": "mission-1",
+      "name": "Falcon 9 Block 5 | Mission 1",
+      "slug": "mission-1",
+      "status": "Go",
+      "net": "2026-11-06T18:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-06T18:00:00Z",
+      "window_end": "2026-11-06T22:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-04T18:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-1/"
+    },
+    {
+      "id": "mission-2",
+      "name": "Falcon 9 Block 5 | Mission 2",
+      "slug": "mission-2",
+      "status": "Go",
+      "net": "2026-11-07T01:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-07T01:00:00Z",
+      "window_end": "2026-11-07T05:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-05T01:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-2/"
+    },
+    {
+      "id": "mission-3",
+      "name": "Falcon 9 Block 5 | Mission 3",
+      "slug": "mission-3",
+      "status": "Go",
+      "net": "2026-11-07T08:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-07T08:00:00Z",
+      "window_end": "2026-11-07T12:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-05T08:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-3/"
+    },
+    {
+      "id": "mission-4",
+      "name": "Falcon 9 Block 5 | Mission 4",
+      "slug": "mission-4",
+      "status": "Go",
+      "net": "2026-11-07T15:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-07T15:00:00Z",
+      "window_end": "2026-11-07T19:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-05T15:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-4/"
+    },
+    {
+      "id": "mission-5",
+      "name": "Falcon 9 Block 5 | Mission 5",
+      "slug": "mission-5",
+      "status": "Go",
+      "net": "2026-11-07T22:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-07T22:00:00Z",
+      "window_end": "2026-11-08T02:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-05T22:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-5/"
+    },
+    {
+      "id": "mission-6",
+      "name": "Falcon 9 Block 5 | Mission 6",
+      "slug": "mission-6",
+      "status": "Go",
+      "net": "2026-11-08T05:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-08T05:00:00Z",
+      "window_end": "2026-11-08T09:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-06T05:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-6/"
+    },
+    {
+      "id": "mission-7",
+      "name": "Falcon 9 Block 5 | Mission 7",
+      "slug": "mission-7",
+      "status": "Go",
+      "net": "2026-11-08T12:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-08T12:00:00Z",
+      "window_end": "2026-11-08T16:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-06T12:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-7/"
+    },
+    {
+      "id": "mission-8",
+      "name": "Falcon 9 Block 5 | Mission 8",
+      "slug": "mission-8",
+      "status": "Go",
+      "net": "2026-11-08T19:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-08T19:00:00Z",
+      "window_end": "2026-11-08T23:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-06T19:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-8/"
+    },
+    {
+      "id": "mission-9",
+      "name": "Falcon 9 Block 5 | Mission 9",
+      "slug": "mission-9",
+      "status": "Go",
+      "net": "2026-11-09T02:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-09T02:00:00Z",
+      "window_end": "2026-11-09T06:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-07T02:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-9/"
+    },
+    {
+      "id": "mission-10",
+      "name": "Falcon 9 Block 5 | Mission 10",
+      "slug": "mission-10",
+      "status": "Go",
+      "net": "2026-11-09T09:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-09T09:00:00Z",
+      "window_end": "2026-11-09T13:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-07T09:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-10/"
+    },
+    {
+      "id": "mission-11",
+      "name": "Falcon 9 Block 5 | Mission 11",
+      "slug": "mission-11",
+      "status": "Go",
+      "net": "2026-11-09T16:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-09T16:00:00Z",
+      "window_end": "2026-11-09T20:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-07T16:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-11/"
+    },
+    {
+      "id": "mission-12",
+      "name": "Falcon 9 Block 5 | Mission 12",
+      "slug": "mission-12",
+      "status": "Go",
+      "net": "2026-11-09T23:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-09T23:00:00Z",
+      "window_end": "2026-11-10T03:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-07T23:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-12/"
+    },
+    {
+      "id": "mission-13",
+      "name": "Falcon 9 Block 5 | Mission 13",
+      "slug": "mission-13",
+      "status": "Go",
+      "net": "2026-11-10T06:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-10T06:00:00Z",
+      "window_end": "2026-11-10T10:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-08T06:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-13/"
+    },
+    {
+      "id": "mission-14",
+      "name": "Falcon 9 Block 5 | Mission 14",
+      "slug": "mission-14",
+      "status": "Go",
+      "net": "2026-11-10T13:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-10T13:00:00Z",
+      "window_end": "2026-11-10T17:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-08T13:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-14/"
+    },
+    {
+      "id": "mission-15",
+      "name": "Falcon 9 Block 5 | Mission 15",
+      "slug": "mission-15",
+      "status": "Go",
+      "net": "2026-11-10T20:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-10T20:00:00Z",
+      "window_end": "2026-11-11T00:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-08T20:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-15/"
+    },
+    {
+      "id": "mission-16",
+      "name": "Falcon 9 Block 5 | Mission 16",
+      "slug": "mission-16",
+      "status": "Go",
+      "net": "2026-11-11T03:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-11T03:00:00Z",
+      "window_end": "2026-11-11T07:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-09T03:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-16/"
+    },
+    {
+      "id": "mission-17",
+      "name": "Falcon 9 Block 5 | Mission 17",
+      "slug": "mission-17",
+      "status": "Go",
+      "net": "2026-11-11T10:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-11T10:00:00Z",
+      "window_end": "2026-11-11T14:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-09T10:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-17/"
+    },
+    {
+      "id": "mission-18",
+      "name": "Falcon 9 Block 5 | Mission 18",
+      "slug": "mission-18",
+      "status": "Go",
+      "net": "2026-11-11T17:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-11T17:00:00Z",
+      "window_end": "2026-11-11T21:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-09T17:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-18/"
+    },
+    {
+      "id": "mission-19",
+      "name": "Falcon 9 Block 5 | Mission 19",
+      "slug": "mission-19",
+      "status": "Go",
+      "net": "2026-11-12T00:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-12T00:00:00Z",
+      "window_end": "2026-11-12T04:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-10T00:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-19/"
+    },
+    {
+      "id": "mission-20",
+      "name": "Falcon 9 Block 5 | Mission 20",
+      "slug": "mission-20",
+      "status": "Go",
+      "net": "2026-11-12T07:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-12T07:00:00Z",
+      "window_end": "2026-11-12T11:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-10T07:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-20/"
+    },
+    {
+      "id": "mission-21",
+      "name": "Falcon 9 Block 5 | Mission 21",
+      "slug": "mission-21",
+      "status": "Go",
+      "net": "2026-11-12T14:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-12T14:00:00Z",
+      "window_end": "2026-11-12T18:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-10T14:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-21/"
+    },
+    {
+      "id": "mission-22",
+      "name": "Falcon 9 Block 5 | Mission 22",
+      "slug": "mission-22",
+      "status": "Go",
+      "net": "2026-11-12T21:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-12T21:00:00Z",
+      "window_end": "2026-11-13T01:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-10T21:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-22/"
+    },
+    {
+      "id": "mission-23",
+      "name": "Falcon 9 Block 5 | Mission 23",
+      "slug": "mission-23",
+      "status": "Go",
+      "net": "2026-11-13T04:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-13T04:00:00Z",
+      "window_end": "2026-11-13T08:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-11T04:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-23/"
+    },
+    {
+      "id": "mission-24",
+      "name": "Falcon 9 Block 5 | Mission 24",
+      "slug": "mission-24",
+      "status": "Go",
+      "net": "2026-11-13T11:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-13T11:00:00Z",
+      "window_end": "2026-11-13T15:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-11T11:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-24/"
+    },
+    {
+      "id": "mission-25",
+      "name": "Falcon 9 Block 5 | Mission 25",
+      "slug": "mission-25",
+      "status": "Go",
+      "net": "2026-11-13T18:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-13T18:00:00Z",
+      "window_end": "2026-11-13T22:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-11T18:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-25/"
+    },
+    {
+      "id": "mission-26",
+      "name": "Falcon 9 Block 5 | Mission 26",
+      "slug": "mission-26",
+      "status": "Go",
+      "net": "2026-11-14T01:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-14T01:00:00Z",
+      "window_end": "2026-11-14T05:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-12T01:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-26/"
+    },
+    {
+      "id": "mission-27",
+      "name": "Falcon 9 Block 5 | Mission 27",
+      "slug": "mission-27",
+      "status": "Go",
+      "net": "2026-11-14T08:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-14T08:00:00Z",
+      "window_end": "2026-11-14T12:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-12T08:00:00Z",
+      "tier": "A",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-27/"
+    },
+    {
+      "id": "mission-28",
+      "name": "Falcon 9 Block 5 | Mission 28",
+      "slug": "mission-28",
+      "status": "Go",
+      "net": "2026-11-14T15:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-14T15:00:00Z",
+      "window_end": "2026-11-14T19:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-12T15:00:00Z",
+      "tier": "B",
+      "assessment": true,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-28/"
+    },
+    {
+      "id": "mission-29",
+      "name": "Falcon 9 Block 5 | Mission 29",
+      "slug": "mission-29",
+      "status": "Go",
+      "net": "2026-11-14T22:00:00Z",
+      "net_precision": "MIN",
+      "window_start": "2026-11-14T22:00:00Z",
+      "window_end": "2026-11-15T02:00:00Z",
+      "probability": null,
+      "weather_concerns": null,
+      "launch_service_provider_name": "SpaceX",
+      "rocket_name": "Falcon 9",
+      "pad": {
+        "id": 16,
+        "name": "Space Launch Complex 4E",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "id": 11,
+          "name": "Vandenberg SFB, CA, USA",
+          "timezone_name": "America/Los_Angeles"
+        }
+      },
+      "mission": {
+        "orbit": {
+          "abbrev": "LEO"
+        }
+      },
+      "last_updated": "2026-11-12T22:00:00Z",
+      "tier": "C",
+      "assessment": false,
+      "worst_rule": {
+        "label": "Thick Cloud 33% (ECMWF)",
+        "rule_id": "thick_cloud",
+        "risk_fraction": 0.3333333333333333,
+        "model": "ecmwf",
+        "confidence": "medium"
+      },
+      "page_url": "/launch/mission-29/"
+    }
+  ]
+}
