@@ -43,3 +43,5 @@
 {"sent_at":"2026-11-15T20:24:15.075540Z","point_id":"location-15","status":"fetched","cost_units":214.2,"remaining_units":41.400024,"cost_mismatch":false}
 {"sent_at":"2026-11-15T20:25:13.613449Z","point_id":"location-13","status":"fetched","cost_units":214.2,"remaining_units":385.8,"cost_mismatch":false}
 {"sent_at":"2026-11-15T20:25:15.075693Z","point_id":"location-17","status":"fetched","cost_units":214.2,"remaining_units":171.6,"cost_mismatch":false}
+{"sent_at":"2026-11-16T01:02:52.839501Z","point_id":"location-19","status":"fetched","cost_units":214.2,"remaining_units":385.8,"cost_mismatch":false}
+{"sent_at":"2026-11-16T01:02:54.405264Z","point_id":"location-8","status":"fetched","cost_units":214.2,"remaining_units":171.6,"cost_mismatch":false}
