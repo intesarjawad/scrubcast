@@ -165,3 +165,10 @@
 {"sent_at":"2026-11-24T02:14:09.668887Z","point_id":"location-17","status":"fetched","cost_units":214.2,"remaining_units":41.400024,"cost_mismatch":false}
 {"sent_at":"2026-11-24T02:16:08.042125Z","point_id":"location-13","status":"fetched","cost_units":214.2,"remaining_units":385.8,"cost_mismatch":false}
 {"sent_at":"2026-11-24T02:16:18.190727Z","point_id":"location-16","status":"fetched","cost_units":214.2,"remaining_units":171.6,"cost_mismatch":false}
+{"sent_at":"2026-11-24T13:44:48.537472Z","point_id":"cape","status":"fetched","cost_units":344.4,"remaining_units":255.6,"cost_mismatch":false}
+{"sent_at":"2026-11-24T13:45:48.537817Z","point_id":"vandenberg","status":"fetched","cost_units":344.4,"remaining_units":255.6,"cost_mismatch":false}
+{"sent_at":"2026-11-24T13:45:49.956995Z","point_id":"location-10","status":"fetched","cost_units":214.2,"remaining_units":41.400024,"cost_mismatch":false}
+{"sent_at":"2026-11-24T13:46:48.538137Z","point_id":"location-185","status":"fetched","cost_units":214.2,"remaining_units":385.8,"cost_mismatch":false}
+{"sent_at":"2026-11-24T13:46:49.957289Z","point_id":"location-19","status":"fetched","cost_units":214.2,"remaining_units":171.6,"cost_mismatch":false}
+{"sent_at":"2026-11-24T13:47:48.538438Z","point_id":"location-17","status":"fetched","cost_units":214.2,"remaining_units":385.8,"cost_mismatch":false}
+{"sent_at":"2026-11-24T13:47:49.957540Z","point_id":"location-16","status":"fetched","cost_units":214.2,"remaining_units":171.6,"cost_mismatch":false}
