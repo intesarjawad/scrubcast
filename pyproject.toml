@@ -9,17 +9,17 @@ description = "Follow the weather that could hold up the next rocket launch."
 readme = "README.md"
 requires-python = ">=3.14"
 license = "MIT"
-dependencies = ["httpx==0.28.1", "numpy==2.5.4", "pydantic==2.14.3"]
+dependencies = ["httpx==0.28.1", "numpy==2.5.5", "pydantic==2.14.4"]
 
 [project.scripts]
 scrubcast = "scrubcast.cli:main"
 
 [dependency-groups]
 dev = [
-  "ruff==0.17.4",
+  "ruff==0.17.6",
   "pyright==1.1.414",
   "pytest==9.2.0",
-  "hypothesis==6.170.15",
+  "hypothesis==6.170.17",
   "mutmut==3.8.1",
   "pre-commit==4.7.0",
 ]
